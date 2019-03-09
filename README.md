@@ -1,4 +1,4 @@
-# cssanimationsnippets
+# csseffectssnippets
 
 https://emilkowalski.github.io/css-animation-snippets/
 
