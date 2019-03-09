@@ -17,7 +17,7 @@
     height: 2px;
     background: linear-gradient(to top right, #13f3b9, #5878F3);
     transition: transform .3s ease-in-out;
-    transform: translateX(-100%);
+    transform: translateX(-101%);
 }
 
 .gradientBorder:hover::before {

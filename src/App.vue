@@ -9,9 +9,10 @@
             <Box :rawCss="rawCss.borderFade" className="borderFade">Hover me</Box>
             <Box :rawCss="rawCss.bouncingLoader" className="bouncingLoader"><div></div><div></div><div></div></Box>
             <Box :rawCss="rawCss.depthButton" className="depthButton ">Hover me</Box>
-            <Box :rawCss="rawCss.gradientBorder" className="gradientBorder ">Hover me</Box>
             <Box :rawCss="rawCss.arrowBounce" className="arrowBounce"><font-awesome-icon icon="arrow-down" /></Box>
+            <Box :rawCss="rawCss.gradientBorder" className="gradientBorder ">Hover me</Box>
             <Box :rawCss="rawCss.buttonLeft" className="buttonLeft"><span class="buttonLeftSpan">Hover me</span></Box>
+            <Box :rawCss="rawCss.buttonLeft" className="siblingFade"><span>Item 1 </span><span>Item 2 </span></Box>
         </div>
     </div>
 </template>
@@ -59,6 +60,12 @@ export default {
         justify-items: center;
         align-items: center;
         grid-gap: 60px 20px;
+
+        @media (max-width: 1000px) {
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 60px 20px;
+        }
     }
 
     h3 {

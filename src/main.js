@@ -13,6 +13,7 @@ import './styles/depthButton.css';
 import './styles/gradientBorder.css';
 import './styles/arrowBounce.css';
 import './styles/buttonLeft.css';
+import './styles/siblingFade.css';
 
 import App from './App.vue';
 

@@ -17,14 +17,14 @@
     height: 100%;
     transform: translateX(-100%);
     background: #5778F3;
-    transition: transform .3s ease-in-out;
+    transition: transform .2s ease-in-out;
 }
 
 .buttonLeft:hover::before {
     transform: translateX(0);
 }
 
-.buttonLeftSpan {
+.buttonLeft span {
     position: relative;
     z-index: 1;
 }

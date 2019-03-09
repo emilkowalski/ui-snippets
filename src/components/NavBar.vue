@@ -3,7 +3,7 @@
         <h1>CSSanimationSnipets<span>.</span></h1>
         <div class="links">
             <a href="https://github.com/emilkowalski/css-animation-snippets">Github</a>
-            <a href="#">Share your ideas!</a>
+            <a href="https://github.com/emilkowalski/css-animation-snippets/issues/new">Share your ideas!</a>
         </div>
     </div>
 </template>
@@ -22,11 +22,21 @@ export default {
         justify-content: space-between;
         align-items: center;
         padding: 4rem 0;
+
+        @media (max-width: 1000px) {
+            flex-direction: column;
+            width: 90%;
+            padding: 2.5rem 0;
+        }
     }
 
     h1 {
         font-size: 2.6rem;
         display: inline-block;
+
+        @media (max-width: 1000px) {
+            margin-top: 0;
+        }
 
         span {
             color: #5878F3;
@@ -43,6 +53,10 @@ export default {
         text-align: center;
         text-decoration: none;
         box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+
+        @media (max-width: 1000px) {
+            display: block;
+        }
 
         &:last-of-type {
             background: #fff;
@@ -61,6 +75,16 @@ export default {
 
         &:not(:last-child) {
             margin-right: 5rem;
+
+            @media (max-width: 1000px) {
+                margin-right: 0;
+            }
+        }
+
+        &:not(:first-child) {
+            @media (max-width: 1000px) {
+                margin-top: 1.5rem;
+            }
         }
     }
 </style>
