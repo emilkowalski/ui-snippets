@@ -1,3 +1,5 @@
+/*eslint-disable */
+
 import borderLeftRight from '!raw-loader!./borderLeftRight.css';
 import donutSpinner from '!raw-loader!./donutSpinner.css';
 import bouncingLoader from '!raw-loader!./bouncingLoader.css';

@@ -1,4 +1,5 @@
 <template>
+    <!-- eslint-disable max-len -->
     <div id="app">
         <NavBar></NavBar>
         <h3>Click on the animation to copy.</h3>

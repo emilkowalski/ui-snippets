@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import VueClipboard from 'vue-clipboard2';
-import App from './App.vue';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
@@ -14,6 +13,8 @@ import './styles/depthButton.css';
 import './styles/gradientBorder.css';
 import './styles/arrowBounce.css';
 import './styles/buttonLeft.css';
+
+import App from './App.vue';
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 library.add(faArrowDown);
