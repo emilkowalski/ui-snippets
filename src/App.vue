@@ -12,7 +12,7 @@
             <Box :rawCss="rawCss.arrowBounce" className="arrowBounce"><font-awesome-icon icon="arrow-down" /></Box>
             <Box :rawCss="rawCss.gradientBorder" className="gradientBorder ">Hover me</Box>
             <Box :rawCss="rawCss.buttonLeft" className="buttonLeft"><span class="buttonLeftSpan">Hover me</span></Box>
-            <Box :rawCss="rawCss.buttonLeft" className="siblingFade"><span>Item 1 </span><span>Item 2 </span></Box>
+            <Box :rawCss="rawCss.siblingFade" className="siblingFade"><span>Item 1 </span><span>Item 2 </span></Box>
         </div>
     </div>
 </template>

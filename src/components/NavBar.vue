@@ -1,9 +1,9 @@
 <template>
     <div class="wrapper">
-        <h1>CSSanimationSnipets<span>.</span></h1>
+        <h1>CSSeffectsSnipets<span>.</span></h1>
         <div class="links">
-            <a href="https://github.com/emilkowalski/css-animation-snippets">Github</a>
-            <a href="https://github.com/emilkowalski/css-animation-snippets/issues/new">Share your ideas!</a>
+            <a href="https://github.com/emilkowalski/css-animation-snippets" target="_blank">Github</a>
+            <a href="https://github.com/emilkowalski/css-animation-snippets/issues/new" target="_blank">Share your ideas!</a>
         </div>
     </div>
 </template>
