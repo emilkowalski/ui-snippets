@@ -1,0 +1,26 @@
+.borderFade {
+    padding-bottom: 1px;
+    -webkit-transition: all 200ms ease;
+    color: #474E51;
+    position: relative;
+}
+
+.borderFade::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #5778F3;
+    transition: all 200ms ease;
+}
+
+.borderFade:hover::after {
+    opacity: 0;
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    -o-transform: translateY(3px);
+    transform: translateY(3px);
+}

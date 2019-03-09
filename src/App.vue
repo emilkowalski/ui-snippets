@@ -5,14 +5,12 @@
         <div class="wrapper">
             <Box :rawCss="rawCss.borderLeftRight" className="borderLeftRight">Hover me</Box>
             <Box :rawCss="rawCss.donutSpinner" className="donutSpinner"></Box>
-            <Box></Box>
-            <Box></Box>
-            <Box></Box>
-            <Box></Box>
-            <Box></Box>
-            <Box></Box>
-            <Box></Box>
-            <Box></Box>
+            <Box :rawCss="rawCss.borderFade" className="borderFade">Hover me</Box>
+            <Box :rawCss="rawCss.bouncingLoader" className="bouncingLoader"><div></div><div></div><div></div></Box>
+            <Box :rawCss="rawCss.depthButton" className="depthButton ">Hover me</Box>
+            <Box :rawCss="rawCss.gradientBorder" className="gradientBorder ">Hover me</Box>
+            <Box :rawCss="rawCss.arrowBounce" className="arrowBounce"><font-awesome-icon icon="arrow-down" /></Box>
+            <Box :rawCss="rawCss.buttonLeft" className="buttonLeft"><span class="buttonLeftSpan">Hover me</span></Box>
         </div>
     </div>
 </template>
@@ -59,6 +57,7 @@ export default {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         justify-items: center;
         align-items: center;
+        grid-gap: 60px 20px;
     }
 
     h3 {

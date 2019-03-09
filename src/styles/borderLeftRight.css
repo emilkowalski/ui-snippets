@@ -14,7 +14,7 @@
   left: 0;
   background-color: #5878F3;
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 .borderLeftRight:hover::after {
