@@ -3,8 +3,8 @@
         <NavBar></NavBar>
         <h3>Click on the animation to copy.</h3>
         <div class="wrapper">
-            <Box :rawCss="rawCss.borderLeftRight">Hover me</Box>
-            <Box></Box>
+            <Box :rawCss="rawCss.borderLeftRight" className="borderLeftRight">Hover me</Box>
+            <Box :rawCss="rawCss.donutSpinner" className="donutSpinner"></Box>
             <Box></Box>
             <Box></Box>
             <Box></Box>
@@ -58,6 +58,7 @@ export default {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         justify-items: center;
+        align-items: center;
     }
 
     h3 {

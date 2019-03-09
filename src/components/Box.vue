@@ -1,6 +1,6 @@
 <template>
     <div class="box" v-clipboard:copy="css">
-        <div class="slot-wrapper">
+        <div :class="className">
             <slot></slot>
         </div>
     </div>
@@ -21,13 +21,9 @@ export default {
       type: String,
       default: '',
     },
-  },
-  methods: {
-    onCopy(e) {
-      alert(`You just copied: ${e.text}`);
-    },
-    onError(e) {
-      alert('Failed to copy texts');
+    className: {
+      type: String,
+      default: '',
     },
   },
 };
@@ -35,4 +31,9 @@ export default {
 
 <style lang="scss" scoped>
 
+    .box {
+        min-height: 30px;
+        min-width: 30px;
+        cursor: pointer;
+    }
 </style>

@@ -6,10 +6,10 @@
         transform: rotate(360deg);
     }
 }
-.animation-code {
+.donutSpinner {
     display: inline-block;
     border: 4px solid rgba(0, 0, 0, 0.1);
-    border-left-color: #7983ff;
+    border-left-color: #5778F3;
     border-radius: 50%;
     width: 30px;
     height: 30px;

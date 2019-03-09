@@ -1,10 +1,10 @@
-.slot-wrapper {
+.borderLeftRight {
   display: inline-block;
   position: relative;
   color: #474E51;
-  cursor: pointer;
 }
-.slot-wrapper::after {
+
+.borderLeftRight::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -16,7 +16,8 @@
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-.slot-wrapper:hover::after {
+
+.borderLeftRight:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
