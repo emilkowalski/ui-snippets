@@ -16,17 +16,18 @@ export default {
 
 <style lang="scss" scoped>
     .wrapper {
-        width: 80%;
+        width: 75%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 0;
+        padding: 4rem 0;
     }
 
     h1 {
         font-size: 2.6rem;
         display: inline-block;
+
         span {
             color: #5878F3;
         }
@@ -35,20 +36,31 @@ export default {
         display: inline-block;
         color: #D8ECF6;
         font-size: 1.6rem;
-        border-radius: 40px;
+        border-radius: 4rem;
         background: #5878F3;
-        width: 160px;
-        padding: 10px 0;
+        width: 16rem;
+        padding: 1rem 0;
         text-align: center;
         text-decoration: none;
-        box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+        box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+
         &:last-of-type {
             background: #fff;
             color: #5878F3;
+
+            &:hover {
+                background: darken(#fff, 3);
+                color: #5878F3;
+            }
         }
+
+        &:hover {
+            background: lighten(#5878F3, 3);
+            color: lighten(#D8ECF6, 3);
+        }
+
         &:not(:last-child) {
-            margin-right: 50px;
+            margin-right: 5rem;
         }
     }
-
 </style>
