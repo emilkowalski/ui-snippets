@@ -3,7 +3,7 @@
         <NavBar></NavBar>
         <h3>Click on the animation to copy.</h3>
         <div class="wrapper">
-            <Box :rawCss="borderLeftRight">Hover me</Box>
+            <Box :rawCss="rawCss.borderLeftRight">Hover me</Box>
             <Box></Box>
             <Box></Box>
             <Box></Box>
@@ -19,12 +19,11 @@
 
 <script>
 import NavBar from '@/components/NavBar.vue';
-import Box from '@/components/Box.vue';
 import rawCss from '@/styles/index';
+import Box from '@/components/Box.vue';
 
 export default {
   name: 'app',
-
   components: { NavBar, Box },
 
   data() {
