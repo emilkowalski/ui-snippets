@@ -16,6 +16,7 @@
             <Box :rawCss="rawCss.radiusButton" @is-copied="messageHandler" className="radiusButton"><span>Hover me</span></Box>
             <Box :rawCss="rawCss.glowButton" @is-copied="messageHandler" className="glowButton">Hover me</Box>
             <Box :rawCss="rawCss.borderCenter" @is-copied="messageHandler" className="borderCenter">Hover me</Box>
+            <Box :rawCss="rawCss.borderMarker" @is-copied="messageHandler" className="borderMarker">Hover me</Box>
         </div>
         <transition name="fade">
             <FlashMessage v-if="isActive"></FlashMessage>

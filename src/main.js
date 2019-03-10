@@ -17,6 +17,7 @@ import './styles/siblingFade.css';
 import './styles/radiusButton.css';
 import './styles/glowButton.css';
 import './styles/borderCenter.css';
+import './styles/borderMarker.css';
 
 import App from './App.vue';
 
