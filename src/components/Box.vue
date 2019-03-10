@@ -38,8 +38,10 @@ export default {
 <style lang="scss" scoped>
 
     .box {
-        min-height: 30px;
+        min-height: 60px;
         min-width: 30px;
         cursor: pointer;
+        display: flex;
+        align-items: center;
     }
 </style>

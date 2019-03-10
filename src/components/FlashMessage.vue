@@ -19,6 +19,7 @@ export default {
         border-radius: 4px;
         color: #fff;
         text-shadow: 0 1px 3px rgba(36,180,126,.4);
+        z-index: 99;
 
         @media (max-width: 1000px) {
             font-size: 1.5rem;

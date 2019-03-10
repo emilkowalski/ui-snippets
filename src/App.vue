@@ -76,7 +76,7 @@ export default {
 
     .wrapper {
         width: 70%;
-        margin: 0 auto;
+        margin: 0 auto 4rem auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         justify-items: center;
