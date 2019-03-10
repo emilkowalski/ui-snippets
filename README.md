@@ -1,6 +1,6 @@
-# cssanimationsnippets
+# CSSeffectsSnippets
 
-https://emilkowalski.github.io/css-animation-snippets/
+https://emilkowalski.github.io/css-effects-snippets/
 
 ## Usage
 
