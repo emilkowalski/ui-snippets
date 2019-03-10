@@ -1,0 +1,21 @@
+.borderCenter {
+    position: relative;
+}
+
+.borderCenter::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 60%;
+    height: 1px;
+    opacity: 0;
+    background-color: #5778F3;
+    transform: translate(-50%, 0);
+    transition: width 0.6s,opacity 0.6s,background-color 0.6s;
+}
+
+.borderCenter:hover::after {
+    width: 100%;
+    opacity: 1;
+}

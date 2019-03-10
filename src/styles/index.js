@@ -10,6 +10,7 @@ import buttonLeft from '!raw-loader!./buttonLeft.css';
 import siblingFade from '!raw-loader!./siblingFade.css';
 import radiusButton from '!raw-loader!./radiusButton.css';
 import glowButton from '!raw-loader!./glowButton.css';
+import borderCenter from '!raw-loader!./borderCenter.css';
 
 
 export default {
@@ -24,4 +25,5 @@ export default {
   siblingFade,
   radiusButton,
   glowButton,
+  borderCenter,
 };
