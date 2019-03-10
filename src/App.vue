@@ -13,6 +13,8 @@
             <Box :rawCss="rawCss.gradientBorder" className="gradientBorder ">Hover me</Box>
             <Box :rawCss="rawCss.buttonLeft" className="buttonLeft"><span class="buttonLeftSpan">Hover me</span></Box>
             <Box :rawCss="rawCss.siblingFade" className="siblingFade"><span>Item 1 </span><span>Item 2 </span></Box>
+            <Box :rawCss="rawCss.radiusButton" className="radiusButton"><span>Hover me</span></Box>
+            <Box :rawCss="rawCss.glowButton" className="glowButton">Hover me</Box>
         </div>
     </div>
 </template>

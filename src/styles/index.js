@@ -8,6 +8,8 @@ import gradientBorder from '!raw-loader!./gradientBorder.css';
 import arrowBounce from '!raw-loader!./arrowBounce.css';
 import buttonLeft from '!raw-loader!./buttonLeft.css';
 import siblingFade from '!raw-loader!./siblingFade.css';
+import radiusButton from '!raw-loader!./radiusButton.css';
+import glowButton from '!raw-loader!./glowButton.css';
 
 
 export default {
@@ -20,4 +22,6 @@ export default {
   arrowBounce,
   buttonLeft,
   siblingFade,
+  radiusButton,
+  glowButton,
 };

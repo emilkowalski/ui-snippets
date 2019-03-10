@@ -14,6 +14,8 @@ import './styles/gradientBorder.css';
 import './styles/arrowBounce.css';
 import './styles/buttonLeft.css';
 import './styles/siblingFade.css';
+import './styles/radiusButton.css';
+import './styles/glowButton.css';
 
 import App from './App.vue';
 
