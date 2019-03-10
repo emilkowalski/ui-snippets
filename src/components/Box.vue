@@ -1,5 +1,5 @@
 <template>
-    <div class="box" v-clipboard:copy="css">
+    <div class="box" v-clipboard:copy="css" @click="isCopied">
         <div :class="className">
             <slot></slot>
         </div>
@@ -24,6 +24,12 @@ export default {
     className: {
       type: String,
       default: '',
+    },
+  },
+
+  methods: {
+    isCopied() {
+      this.$emit('is-copied');
     },
   },
 };
