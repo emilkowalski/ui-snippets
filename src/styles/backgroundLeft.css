@@ -1,0 +1,24 @@
+.backgroundLeft {
+  height: 40px;
+  padding: 0 14px;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+  line-height: 40px;
+  color: #474E51;
+}
+
+.backgroundLeft::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  background: #5778F3;
+  height: 100%;
+  width: 40%;
+  z-index: -1;
+  transition: width .3s ease-in-out;
+}
+
+.backgroundLeft:hover::before {
+  transform: translateX(100%);
+}

@@ -17,6 +17,8 @@
             <Box :rawCss="rawCss.glowButton" @is-copied="messageHandler" className="glowButton">Hover me</Box>
             <Box :rawCss="rawCss.borderCenter" @is-copied="messageHandler" className="borderCenter">Hover me</Box>
             <Box :rawCss="rawCss.borderMarker" @is-copied="messageHandler" className="borderMarker">Hover me</Box>
+            <Box :rawCss="rawCss.textAnimationLeft" @is-copied="messageHandler" className="textAnimationLeft"><span>Hover me</span></Box>
+            <Box :rawCss="rawCss.toggleSwitch" @is-copied="messageHandler" className=""><input type="checkbox" id="toggle" class="offscreen" /> <label for="toggle" class="switch"></label></Box>
         </div>
         <transition name="fade">
             <FlashMessage v-if="isActive"></FlashMessage>

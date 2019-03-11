@@ -12,6 +12,8 @@ import radiusButton from '!raw-loader!./radiusButton.css';
 import glowButton from '!raw-loader!./glowButton.css';
 import borderCenter from '!raw-loader!./borderCenter.css';
 import borderMarker from '!raw-loader!./borderMarker.css';
+import textAnimationLeft from '!raw-loader!./textAnimationLeft.css';
+import toggleSwitch from '!raw-loader!./toggleSwitch.css';
 
 
 export default {
@@ -28,4 +30,5 @@ export default {
   glowButton,
   borderCenter,
   borderMarker,
+  toggleSwitch,
 };
