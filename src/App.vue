@@ -18,6 +18,7 @@
             <Box :rawCss="rawCss.borderCenter" @is-copied="messageHandler" className="borderCenter">Hover me</Box>
             <Box :rawCss="rawCss.borderMarker" @is-copied="messageHandler" className="borderMarker">Hover me</Box>
             <Box :rawCss="rawCss.textAnimationLeft" @is-copied="messageHandler" className="textAnimationLeft"><span>Hover me</span></Box>
+            <Box :rawCss="rawCss.gradientText" @is-copied="messageHandler" className="gradientText"><span>Hover me</span></Box>
         </div>
         <transition name="fade">
             <FlashMessage v-if="isActive"></FlashMessage>

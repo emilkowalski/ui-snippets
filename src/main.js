@@ -19,6 +19,7 @@ import './styles/glowButton.css';
 import './styles/borderCenter.css';
 import './styles/borderMarker.css';
 import './styles/textAnimationLeft.css';
+import './styles/gradientText.css';
 
 import App from './App.vue';
 
