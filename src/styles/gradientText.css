@@ -2,7 +2,7 @@
     position: relative;
     color: transparent;
     transition-duration: 0.3s;
-    background: linear-gradient(to left, #13f3b9 0%, #5878F3 50%, transparent 50%) 100% 0 / 200% 200% #474E51;
+    background: linear-gradient(to right, #13f3b9 0%, #5878F3 50%, transparent 50%) 100% 0 / 200% 200% #474E51;
     background-clip: text;
 }
 
