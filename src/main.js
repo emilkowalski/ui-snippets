@@ -2,7 +2,7 @@ import Vue from 'vue';
 import VueClipboard from 'vue-clipboard2';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 import './styles/borderLeftRight.css';
@@ -20,11 +20,13 @@ import './styles/borderCenter.css';
 import './styles/borderMarker.css';
 import './styles/textAnimationLeft.css';
 import './styles/gradientText.css';
+import './styles/lineThrough.css';
+import './styles/slideRight.css';
 
 import App from './App.vue';
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
-library.add(faArrowDown);
+library.add(faArrowDown, faAngleRight);
 
 Vue.config.productionTip = false;
 Vue.use(VueClipboard);

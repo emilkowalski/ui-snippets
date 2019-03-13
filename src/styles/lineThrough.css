@@ -1,0 +1,38 @@
+.lineThrough {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.lineThrough:before, .lineThrough:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #fff;
+}
+
+.lineThrough:before {
+    left: -2.5px;
+}
+.lineThrough:after {
+    right: 2.5px;
+    background: #5778F3;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.lineThrough:hover:before {
+    background: #5778F3;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.lineThrough:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+}
+
+

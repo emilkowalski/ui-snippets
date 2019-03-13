@@ -1,0 +1,10 @@
+.slideRight {
+    color: #5778F3;
+    transition: transform .3s ease-in-out;
+    font-size: 25px;
+    padding: 15px 20px;
+}
+
+.slideRight:hover {
+    transform: translateX(25px);
+}

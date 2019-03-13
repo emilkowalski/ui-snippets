@@ -14,6 +14,8 @@ import borderCenter from '!raw-loader!./borderCenter.css';
 import borderMarker from '!raw-loader!./borderMarker.css';
 import textAnimationLeft from '!raw-loader!./textAnimationLeft.css';
 import gradientText from '!raw-loader!./gradientText.css';
+import lineThrough from '!raw-loader!./lineThrough.css';
+import slideRight from '!raw-loader!./slideRight.css';
 
 
 export default {
@@ -31,5 +33,7 @@ export default {
   borderCenter,
   borderMarker,
   textAnimationLeft,
-  gradientText
+  gradientText,
+  lineThrough,
+  slideRight
 };
