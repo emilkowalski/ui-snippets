@@ -1,0 +1,23 @@
+.borderRightLeft {
+    display: inline-block;
+    color: #474E51;
+    position: relative;
+}
+
+.borderRightLeft::after {
+     content: '';
+     position: absolute;
+     width: 100%;
+     transform: scaleX(1);
+     height: 2px;
+     bottom: 0;
+     left: 0;
+     background-color: #5778F3;
+     transform-origin: bottom left;
+     transition: transform .3s ease-in-out;
+ }
+
+.borderRightLeft:hover::after {
+     transform: scaleX(0);
+     transform-origin: bottom right;
+ }
