@@ -23,6 +23,7 @@ import './styles/gradientText.css';
 import './styles/lineThrough.css';
 import './styles/slideRight.css';
 import './styles/borderRightLeft.css';
+import './styles/textRightLeft.css';
 
 import App from './App.vue';
 

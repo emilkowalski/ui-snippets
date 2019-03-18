@@ -1,0 +1,44 @@
+.textRightLeft {
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    overflow: hidden;
+    background: #474E51;
+    position: relative;
+    line-height: 40px;
+    color: #fff;
+}
+
+.textRightLeft span {
+    display: block;
+}
+
+.textRightLeft:hover span {
+    animation: animButtonSpan 0.4s;
+}
+
+@keyframes animButtonSpan {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    33% {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+
+    66% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+
+

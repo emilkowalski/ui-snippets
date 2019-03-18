@@ -22,11 +22,11 @@
             <Box :rawCss="rawCss.lineThrough" @is-copied="messageHandler" className="lineThrough">Hover me</Box>
             <Box :rawCss="rawCss.slideRight" @is-copied="messageHandler" className="slideRight"><font-awesome-icon icon="angle-right" /></Box>
             <Box :rawCss="rawCss.borderRightLeft" @is-copied="messageHandler" className="borderRightLeft">Hover me</Box>
+            <Box :rawCss="rawCss.textRightLeft" @is-copied="messageHandler" className="textRightLeft"><span>Hover me</span></Box>
         </div>
         <transition name="fade">
             <FlashMessage v-if="isActive"></FlashMessage>
         </transition>
-
     </div>
 </template>
 

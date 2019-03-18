@@ -17,7 +17,7 @@ import gradientText from '!raw-loader!./gradientText.css';
 import lineThrough from '!raw-loader!./lineThrough.css';
 import slideRight from '!raw-loader!./slideRight.css';
 import borderRightLeft from '!raw-loader!./borderRightLeft.css';
-
+import textRightLeft from '!raw-loader!./textRightLeft.css';
 
 export default {
   borderLeftRight,
@@ -38,4 +38,5 @@ export default {
   lineThrough,
   slideRight,
   borderRightLeft,
+  textRightLeft,
 };
