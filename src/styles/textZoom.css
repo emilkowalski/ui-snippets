@@ -1,0 +1,7 @@
+.textZoom {
+    transition: transform 0.3s;
+}
+
+.textZoom:hover {
+    transform: scale(1.2);
+}
