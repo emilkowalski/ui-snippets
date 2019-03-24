@@ -27,6 +27,7 @@ import './styles/textRightLeft.css';
 import './styles/textZoom.css';
 
 import App from './App.vue';
+import store from './store';
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 library.add(faArrowDown, faAngleRight);
@@ -35,5 +36,6 @@ Vue.config.productionTip = false;
 Vue.use(VueClipboard);
 
 new Vue({
+  store,
   render: h => h(App),
 }).$mount('#app');

@@ -29,7 +29,7 @@ export default {
 
   methods: {
     isCopied() {
-      this.$emit('is-copied');
+      this.$store.dispatch('messageHandler');
     },
   },
 };

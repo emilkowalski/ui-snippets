@@ -13,7 +13,8 @@
     "@fortawesome/vue-fontawesome": "^0.1.5",
     "raw-loader": "^1.0.0",
     "vue": "^2.6.6",
-    "vue-clipboard2": "^0.3.0"
+    "vue-clipboard2": "^0.3.0",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",
