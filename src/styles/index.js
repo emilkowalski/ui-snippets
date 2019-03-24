@@ -19,6 +19,7 @@ import slideRight from '!raw-loader!./slideRight.css';
 import borderRightLeft from '!raw-loader!./borderRightLeft.css';
 import textRightLeft from '!raw-loader!./textRightLeft.css';
 import textZoom from '!raw-loader!./textZoom.css';
+import iconRadius from '!raw-loader!./iconRadius.css';
 
 export default {
   borderLeftRight,
@@ -41,4 +42,5 @@ export default {
   borderRightLeft,
   textRightLeft,
   textZoom,
+  iconRadius,
 };

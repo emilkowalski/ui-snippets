@@ -38,6 +38,7 @@
       <Box :rawCss="rawCss.textRightLeft" className="textRightLeft"><span>Hover me</span>
       </Box>
       <Box :rawCss="rawCss.textZoom" className="textZoom">Hover me</Box>
+      <Box :rawCss="rawCss.iconRadius" className="iconRadius"></Box>
     </div>
     <transition name="fade">
       <FlashMessage v-if="isActive"></FlashMessage>

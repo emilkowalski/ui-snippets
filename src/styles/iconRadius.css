@@ -1,0 +1,42 @@
+.iconRadius {
+    color: #474E51;
+    padding: 15px;
+    position: relative;
+}
+
+.iconRadius::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    background-color: #5878F3;
+    z-index: -1;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform .3s cubic-bezier(.215,.61,.355,1);
+}
+
+.iconRadius::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    border: 2px solid #5878F3;
+    border-radius: 50%;
+    transform: scale(1);
+    opacity: 1;
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1),transform .3s cubic-bezier(.215,.61,.355,1);
+}
+
+.iconRadius:hover::before {
+    transform: scale(1);
+}
+
+.iconRadius:hover::after {
+    transform: scale(1.2);
+    opacity: 0;
+}
