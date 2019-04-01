@@ -25,6 +25,7 @@ import './styles/slideRight.css';
 import './styles/borderRightLeft.css';
 import './styles/textRightLeft.css';
 import './styles/iconRadius.css';
+import './styles/pulse.css';
 import './styles/lineThroughBox.css';
 import './styles/textZoom.css';
 import App from './App.vue';

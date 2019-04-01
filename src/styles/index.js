@@ -20,6 +20,7 @@ import borderRightLeft from '!raw-loader!./borderRightLeft.css';
 import textRightLeft from '!raw-loader!./textRightLeft.css';
 import textZoom from '!raw-loader!./textZoom.css';
 import iconRadius from '!raw-loader!./iconRadius.css';
+import pulse from '!raw-loader!./pulse.css';
 import lineThroughBox from '!raw-loader!./lineThroughBox.css';
 
 export default {
@@ -44,5 +45,6 @@ export default {
   textRightLeft,
   textZoom,
   iconRadius,
-  lineThroughBox
+  lineThroughBox,
+  pulse
 };
