@@ -1,6 +1,6 @@
 <template>
   <!-- eslint-disable max-len -->
-  <div id="app">
+  <div id="home">
     <h3>Click on the animation to copy.</h3>
     <div class="selectBox">
       <select  v-model="filtered">
