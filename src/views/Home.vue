@@ -60,6 +60,7 @@ export default {
         { rawCss: this.rawCss.textZoom, className: 'textZoom', category: 'text', text: 'Hover me' },
         { rawCss: this.rawCss.iconRadius, className: 'iconRadius', category: 'animation', text: '' },
         { rawCss: this.rawCss.lineThroughBox, className: 'lineThroughBox', category: 'text', text: 'Hover me' },
+        { rawCss: this.rawCss.pulseAnim, className: 'pulseAnim', category: 'animation', text: '' },
       ];
     },
     filteredBoxes() {
