@@ -2,6 +2,18 @@
     animation: bounce 2s infinite;
     color: #5778F3;
     font-size: 22px;
+    position: relative;
+}
+
+.arrowBounce::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("../assets/images/scroll-arrow.svg") no-repeat;
+    height: 26px;
+    width: 18px;
 }
 
 @keyframes bounce {

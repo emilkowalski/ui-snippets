@@ -1,13 +1,8 @@
 import Vue from 'vue';
 import VueClipboard from 'vue-clipboard2';
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faArrowDown, faAngleRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-
 import './styles/borderLeftRight.css';
 import './styles/donutSpinner.css';
-import './styles/bouncingLoader.css';
 import './styles/borderFade.css';
 import './styles/depthButton.css';
 import './styles/gradientBorder.css';
@@ -29,14 +24,13 @@ import './styles/lineThroughBox.css';
 import './styles/textZoom.css';
 import App from './App.vue';
 import store from './store';
-
-Vue.component('font-awesome-icon', FontAwesomeIcon);
-library.add(faArrowDown, faAngleRight);
+import router from './router';
 
 Vue.config.productionTip = false;
 Vue.use(VueClipboard);
 
 new Vue({
   store,
+  router,
   render: h => h(App),
 }).$mount('#app');

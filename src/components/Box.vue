@@ -2,6 +2,7 @@
     <div class="box" v-clipboard:copy="css" @click="isCopied">
         <div :class="className">
             <slot></slot>
+            <slot name="innerHtml"></slot>
         </div>
     </div>
 </template>

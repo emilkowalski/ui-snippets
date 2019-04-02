@@ -46,7 +46,7 @@ export default {
         display: inline-block;
         color: #D8ECF6;
         font-size: 1.6rem;
-        border-radius: 0.2rem;
+        border-radius: 0.4rem;
         background: #5878F3;
         width: 16rem;
         padding: 1rem 0;

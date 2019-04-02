@@ -1,7 +1,6 @@
 /*eslint-disable */
 import borderLeftRight from '!raw-loader!./borderLeftRight.css';
 import donutSpinner from '!raw-loader!./donutSpinner.css';
-import bouncingLoader from '!raw-loader!./bouncingLoader.css';
 import borderFade from '!raw-loader!./borderFade.css';
 import depthButton from '!raw-loader!./depthButton.css';
 import gradientBorder from '!raw-loader!./gradientBorder.css';
@@ -25,7 +24,6 @@ import lineThroughBox from '!raw-loader!./lineThroughBox.css';
 export default {
   borderLeftRight,
   donutSpinner,
-  bouncingLoader,
   borderFade,
   depthButton,
   gradientBorder,
