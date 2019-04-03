@@ -21,6 +21,7 @@ import textZoom from '!raw-loader!./textZoom.css';
 import iconRadius from '!raw-loader!./iconRadius.css';
 import lineThroughBox from '!raw-loader!./lineThroughBox.css';
 import pulseAnim from '!raw-loader!./pulseAnim.css';
+import bouncingLoader from '!raw-loader!./bouncingLoader.css';
 
 export default {
   borderLeftRight,
@@ -43,5 +44,7 @@ export default {
   textRightLeft,
   textZoom,
   iconRadius,
-  lineThroughBox
+  lineThroughBox,
+  pulseAnim,
+  bouncingLoader
 };

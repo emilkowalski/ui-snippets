@@ -4,21 +4,28 @@
         transform: translate3d(0, -16px, 0);
     }
 }
-.bouncingLoader {
-    display: flex;
-    justify-content: center;
-}
-.bouncingLoader > div {
+
+.bouncingLoader > div, .bouncingLoader:before, .bouncingLoader:after {
+    display: inline-block;
     width: 13px;
     height: 13px;
-    margin: 32px 3px;
     background: #5778F3;
     border-radius: 50%;
     animation: bouncing-loader 0.6s infinite alternate;
 }
-.bouncingLoader > div:nth-child(2) {
+
+.bouncingLoader > div, .bouncingLoader:before, .bouncingLoader:after {
+    content: " ";
+}
+
+.bouncingLoader > div {
+    margin: 0 5px;
+}
+
+.bouncingLoader > div {
     animation-delay: 0.2s;
 }
-.bouncingLoader > div:nth-child(3) {
+
+.bouncingLoader:after {
     animation-delay: 0.4s;
 }
