@@ -61,6 +61,7 @@ export default {
         { rawCss: this.rawCss.iconRadius, className: 'iconRadius', category: 'animation', text: '' },
         { rawCss: this.rawCss.lineThroughBox, className: 'lineThroughBox', category: 'text', text: 'Hover me' },
         { rawCss: this.rawCss.pulseAnim, className: 'pulseAnim', category: 'animation', text: '' },
+        { rawCss: this.rawCss.bouncingLoader, className: 'bouncingLoader', category: 'animation', text: '' },
       ];
     },
     filteredBoxes() {
