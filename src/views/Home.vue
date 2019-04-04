@@ -3,7 +3,7 @@
   <div id="home">
     <h3>Click on the animation to copy.</h3>
     <div class="selectBox">
-      <select  v-model="filtered">
+      <select v-model="filtered" @change="updateVisibleBoxes">
         <option value="all" selected disabled>Filter results</option>
         <option value="all">All effects</option>
         <option value="animation">Animations</option>
@@ -12,8 +12,9 @@
       </select>
     </div>
     <div class="wrapper">
-      <Box :key="box.rawCss" v-bind="box" v-for="box in filteredBoxes"><div slot="innerHtml" v-html="box.text"></div></Box>
+      <Box :key="box.rawCss" v-bind="box" v-for="box in visibleBoxes"><div slot="innerHtml" v-html="box.text"></div></Box>
     </div>
+    <Pagination :pagesAmount="this.pagesAmount" :currentPage="this.currentPage" @next-page-click="addPage" @previous-page-click="removePage"></Pagination>
     <transition name="fade">
       <FlashMessage v-if="isActive"></FlashMessage>
     </transition>
@@ -23,6 +24,7 @@
 <script>
 import rawCss from '@/styles/index';
 import Box from '@/components/Box.vue';
+import Pagination from '@/components/Pagination.vue';
 import FlashMessage from '@/components/FlashMessage.vue';
 import { mapState } from 'vuex';
 
@@ -31,12 +33,42 @@ export default {
   components: {
     Box,
     FlashMessage,
+    Pagination,
   },
   data() {
     return {
       rawCss,
       filtered: 'all',
+      currentPage: 1,
+      onPage: 20,
+      visibleBoxes: [],
+      pagesAmount: null,
     };
+  },
+  beforeMount() {
+    this.updateVisibleBoxes();
+    this.getPagesAmount();
+  },
+  methods: {
+    removePage() {
+      this.currentPage -= 1;
+      this.updateVisibleBoxes();
+    },
+    addPage() {
+      this.currentPage += 1;
+      this.updateVisibleBoxes();
+    },
+    getPagesAmount() {
+      console.log(this.filtered);
+      if (this.filtered === 'all') {
+        this.pagesAmount = Math.ceil(this.boxes.length / 20);
+      }
+      this.pagesAmount = Math.ceil(this.filteredBoxes.length / 20);
+    },
+    updateVisibleBoxes() {
+      this.visibleBoxes = this.filteredBoxes.slice((this.currentPage - 1) * this.onPage, ((this.currentPage - 1) * this.onPage) + this.onPage);
+      this.getPagesAmount();
+    },
   },
   computed: {
     boxes() {
@@ -77,21 +109,6 @@ export default {
 
 <style lang="scss">
   @import url("https://use.typekit.net/moy8qkv.css");
-
-  html {
-    font-size: 62.5%;
-  }
-
-  body {
-    background: #fcfdff;
-    font-family: europa, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #474E51;
-    margin: 0;
-    padding: 0;
-    font-size: 1.6rem;
-  }
 
   .wrapper {
     width: 70%;

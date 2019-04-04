@@ -12,7 +12,8 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     "object-curly-newline": ["error", {
       "ExportDeclaration": { "multiline": true, "minProperties": 5 }
-    }]
+    }],
+    "max-len": [2, {"code": 150, "tabWidth": 4, "ignoreUrls": true}]
   },
   parserOptions: {
     parser: 'babel-eslint',

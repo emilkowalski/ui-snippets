@@ -19,8 +19,15 @@ export default {
 <style lang="scss">
   @import url("https://use.typekit.net/moy8qkv.css");
 
+  * {
+    box-sizing: border-box;
+  }
+
   html {
     font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
   }
 
   body {
@@ -30,8 +37,10 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     color: #474E51;
     margin: 0;
-    padding: 0;
+    padding: 0 0 6rem 0;
     font-size: 1.6rem;
+    position: relative;
+    min-height: 100%;
   }
 
   #nav {
@@ -52,4 +61,5 @@ export default {
       text-decoration: underline;
     }
   }
+
 </style>
