@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
         <div class="title">
-          <a href="/">CSSeffectsSnippets<span>.</span></a>
+          <a href="/css-effects-snippets/">CSSeffectsSnippets<span>.</span></a>
         </div>
         <div class="links">
             <a href="https://github.com/emilkowalski/css-animation-snippets" target="_blank">Github</a>
