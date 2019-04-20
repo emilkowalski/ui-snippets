@@ -59,7 +59,6 @@ export default {
       this.updateVisibleBoxes();
     },
     getPagesAmount() {
-      console.log(this.filtered);
       if (this.filtered === 'all') {
         this.pagesAmount = Math.ceil(this.boxes.length / 20);
       }
@@ -111,17 +110,17 @@ export default {
   @import url("https://use.typekit.net/moy8qkv.css");
 
   .wrapper {
-    width: 70%;
+    width: 80%;
     margin: 0 auto 4rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
-    grid-gap: 80px 30px;
+    grid-gap: 15px;
+    padding: 20px;
     @media (max-width: 1000px) {
       width: 100%;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 60px 20px;
     }
   }
 
