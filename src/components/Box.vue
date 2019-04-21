@@ -51,7 +51,6 @@ export default {
 
   &:hover {
     box-shadow: 0px 4px 7px rgba(0,0,0,.2);
-    background: #fff;
   }
 }
 
