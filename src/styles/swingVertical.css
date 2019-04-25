@@ -1,0 +1,37 @@
+.swingVertical{
+    color: #474E51;
+}
+
+.swingVertical:hover
+{
+    animation: swingVertical 1s ease;
+    animation-iteration-count: 1;
+}
+
+@keyframes swingVertical
+{
+    15%
+    {
+        transform: translateY(6px);
+    }
+    30%
+    {
+        transform: translateY(-6px);
+    }
+    50%
+    {
+        transform: translateY(4px);
+    }
+    65%
+    {
+        transform: translateY(-2px);
+    }
+    80%
+    {
+        transform: translateY(2px);
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
+}
