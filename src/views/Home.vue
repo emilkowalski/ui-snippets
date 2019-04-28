@@ -95,6 +95,7 @@ export default {
         { rawCss: this.rawCss.bouncingLoader, className: 'bouncingLoader', category: 'animation', text: '' },
         { rawCss: this.rawCss.swingHorizontal, className: 'swingHorizontal', category: 'text', text: 'Hover me' },
         { rawCss: this.rawCss.swingVertical, className: 'swingVertical', category: 'text', text: 'Hover me' },
+        { rawCss: this.rawCss.buttonOverlay, className: 'buttonOverlay', category: 'button', text: 'Hover me' },
       ];
     },
     filteredBoxes() {

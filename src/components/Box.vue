@@ -45,13 +45,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px dotted rgba(71, 78, 81, 0.34);
-  border-radius: 5px;
   transition: 0.2s;
-
-  &:hover {
-    box-shadow: 0px 4px 7px rgba(0,0,0,.2);
-  }
 }
 
 </style>
