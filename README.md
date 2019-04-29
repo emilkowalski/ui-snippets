@@ -7,10 +7,17 @@ https://emilkowalski.github.io/css-effects-snippets/
 Click on the animation to copy it to your clipboard
 
 ## How to start?
+Use yarn
 ```
 yarn 
 
 yarn serve
+```
+or npm
+```
+npm install
+
+npm run serve
 ```
 
 ## How to contribute?

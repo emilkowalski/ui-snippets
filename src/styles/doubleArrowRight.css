@@ -1,0 +1,34 @@
+.doubleArrowRight {
+    background: #474E51;
+    color: #fff;
+    display: inline-block;
+    height: 40px;
+    width: 120px;
+    line-height: 40px;
+    text-align: center;
+    transition: all 0.4s;
+}
+  
+.doubleArrowRight span {
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+  
+.doubleArrowRight span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.4s;
+}
+
+.doubleArrowRight:hover span {
+    padding-right: 15px;
+}
+
+.doubleArrowRight:hover span:after {
+    opacity: 1;
+    right: 0;
+}
