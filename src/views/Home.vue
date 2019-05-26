@@ -16,8 +16,6 @@
                 <div slot="innerHtml" v-html="box.text"></div>
             </Box>
         </div>
-        <Pagination :pagesAmount="this.pagesAmount" :currentPage="this.currentPage" @next-page-click="addPage"
-                    @previous-page-click="removePage"></Pagination>
         <transition name="fade">
             <FlashMessage v-if="isActive"></FlashMessage>
         </transition>
@@ -27,7 +25,6 @@
 <script>
 import rawCss from '@/styles/index';
 import Box from '@/components/Box.vue';
-import Pagination from '@/components/Pagination.vue';
 import FlashMessage from '@/components/FlashMessage.vue';
 import { mapState } from 'vuex';
 
@@ -36,46 +33,21 @@ export default {
   components: {
     Box,
     FlashMessage,
-    Pagination,
   },
   data() {
     return {
       rawCss,
       filtered: 'all',
-      currentPage: 1,
-      onPage: 20,
       visibleBoxes: [],
-      pagesAmount: null,
     };
   },
-  beforeMount() {
-    this.updateVisibleBoxes();
-    this.getPagesAmount();
+  created() {
+    this.visibleBoxes = this.filteredBoxes;
   },
-  methods: {
-    removePage() {
-      this.currentPage -= 1;
-      this.updateVisibleBoxes();
-    },
-    addPage() {
-      this.currentPage += 1;
-      this.updateVisibleBoxes();
-    },
-    getPagesAmount() {
-      if (this.filtered === 'all') {
-        this.pagesAmount = Math.ceil(this.boxes.length / 20);
-      }
-      this.pagesAmount = Math.ceil(this.filteredBoxes.length / 20);
-    },
-    updateVisibleBoxes() {
-      if (this.filtered !== 'all') {
-        this.currentPage = 1;
-        this.visibleBoxes = this.filteredBoxes.slice((this.currentPage - 1) * this.onPage, ((this.currentPage - 1) * this.onPage) + this.onPage);
-      } else {
-        this.visibleBoxes = this.filteredBoxes.slice((this.currentPage - 1) * this.onPage, ((this.currentPage - 1) * this.onPage) + this.onPage);
-      }
 
-      this.getPagesAmount();
+  methods: {
+    updateVisibleBoxes() {
+      this.visibleBoxes = this.filteredBoxes;
     },
   },
   computed: {
