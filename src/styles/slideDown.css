@@ -1,0 +1,33 @@
+.slideDown {
+            width: 120px;
+            height: 40px;
+            border: none;
+            color: blueviolet;
+            background: transparent;
+            padding: 0 14px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+            position: relative;
+            transition: 0.5s ease-out;
+        }
+        
+.slideDown::after {
+                position: absolute;
+                width: 100%;
+                height: 0;
+                background-color: blueviolet;
+                content: "";
+                top: 0;
+                left: 0;
+                transition: 0.5s ease-in-out;
+                z-index: -1;
+            }
+
+.slideDown:hover {
+                color: white;
+            }
+
+.slideDown:hover::after {
+                height: 100%;
+            }

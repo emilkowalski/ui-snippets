@@ -1,0 +1,42 @@
+.doubleDashed {
+            width: 120px;
+            height: 40px;
+            border: none;
+            color: blueviolet;
+            background: transparent;
+            padding: 0 14px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+            position: relative;
+            color: blueviolet
+        }
+        
+        
+        .doubleDashed::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: blueviolet;
+            transition-duration: 0.3s;
+        }
+        
+        .doubleDashed::before {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background-color: blueviolet;
+            transition-duration: 0.3s;
+        }
+        
+        .doubleDashed:hover::after,
+        .doubleDashed:hover::before {
+            width: 100%;
+          
+        }
