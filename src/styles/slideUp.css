@@ -2,7 +2,7 @@
             width: 120px;
             height: 40px;
             border: none;
-            color: blueviolet;
+            color: #5878F3;
             background: transparent;
             padding: 0 14px;
             text-align: center;
@@ -15,7 +15,7 @@
                 position: absolute;
                 width: 100%;
                 height: 0;
-                background-color: blueviolet;
+                background-color: #5878F3;
                 content: "";
                 bottom: 0;
                 left: 0;
