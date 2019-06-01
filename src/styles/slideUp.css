@@ -1,0 +1,32 @@
+.slideUp {
+            width: 120px;
+            height: 40px;
+            border: none;
+            color: blueviolet;
+            background: transparent;
+            padding: 0 14px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+            position: relative;
+            transition: 0.5s ease-out;
+        }
+ .slideUp::after {
+                position: absolute;
+                width: 100%;
+                height: 0;
+                background-color: blueviolet;
+                content: "";
+                bottom: 0;
+                left: 0;
+                transition: 0.5s ease-in-out;
+                z-index: -1;
+            }
+
+.slideUp:hover {
+                color: white;
+            }
+
+.slideUp:hover::after {
+                height: 100%;
+            }
