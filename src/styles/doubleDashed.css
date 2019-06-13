@@ -1,40 +1,37 @@
 .doubleDashed {
     width: 120px;
     height: 40px;
-    border: none;
     color: #5878F3;
-    background: transparent;
     padding: 0 14px;
     text-align: center;
     line-height: 40px;
     cursor: pointer;
     position: relative;
+    overflow: hidden;
 }
 
-
+.doubleDashed::before,
 .doubleDashed::after {
     position: absolute;
     content: '';
-    top: 0;
     left: 0;
-    width: 0;
     height: 2px;
+    width: 100%;
     background-color: #5878F3;
-    transition-duration: 0.3s;
+    transition: transform 0.2s ease-in-out;
 }
 
 .doubleDashed::before {
-    position: absolute;
-    content: '';
+    top: 0;
+    transform: translateX(-100%);
+}
+
+.doubleDashed::after {
     bottom: 0;
-    right: 0;
-    width: 0;
-    height: 2px;
-    background-color: #5878F3;
-    transition-duration: 0.3s;
+    transform: translateX(100%);
 }
 
 .doubleDashed:hover::after,
 .doubleDashed:hover::before {
-    width: 100%;
+    transform: translateX(0);
 }

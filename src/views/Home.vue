@@ -228,18 +228,6 @@ export default {
           category: 'button',
           text: 'Hover me',
         },
-        {
-          rawCss: this.rawCss.diagonalFill,
-          className: 'diagonalFill',
-          category: 'button',
-          text: 'Hover me',
-        },
-        {
-          rawCss: this.rawCss.dragLeft,
-          className: 'dragLeft',
-          category: 'button',
-          text: 'Hover me',
-        },
       ];
     },
     filteredBoxes() {
