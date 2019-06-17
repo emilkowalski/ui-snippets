@@ -15,7 +15,7 @@
 }
 
 .arrowFromLeft:hover span {
-    transform: translateX(13px);
+    transform: translateX(15px);
 }
 
 .arrowFromLeft:hover svg {
@@ -24,14 +24,13 @@
 }
 
 .arrowFromLeft span {
-    margin-left: 15px;
     transition: transform .3s cubic-bezier(.455,.03,.515,.955);
 }
 
 .arrowFromLeft svg {
     position: absolute;
     top: 17px;
-    left: 20px;
+    left: 10px;
     fill: white;
     opacity: 0;
     transform: translateX(-10px);
