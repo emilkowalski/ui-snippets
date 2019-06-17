@@ -199,18 +199,6 @@ export default {
           text: 'Hover me',
         },
         {
-          rawCss: this.rawCss.doubleArrowRight,
-          className: 'doubleArrowRight',
-          category: 'text',
-          text: '<span>Hover me</span>',
-        },
-        {
-          rawCss: this.rawCss.doubleArrowLeft,
-          className: 'doubleArrowLeft',
-          category: 'text',
-          text: '<span>Hover me</span>',
-        },
-        {
           rawCss: this.rawCss.doubleDashed,
           className: 'doubleDashed',
           category: 'button',
@@ -227,6 +215,12 @@ export default {
           className: 'slideUp',
           category: 'button',
           text: 'Hover me',
+        },
+        {
+          rawCss: this.rawCss.arrowFromLeft,
+          className: 'arrowFromLeft',
+          category: 'button',
+          text: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" width="9" height="9"> <path d="M0 0l7 4.5L0 9V0z"></path></svg><span>Hover me</span>',
         },
       ];
     },
@@ -248,11 +242,12 @@ export default {
         width: 80%;
         margin: 0 auto 4rem auto;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(5, 1fr);
         justify-items: center;
         align-items: center;
         grid-gap: 15px;
         padding: 20px;
+
         @media (max-width: 1000px) {
             width: 100%;
             grid-template-columns: 1fr 1fr;

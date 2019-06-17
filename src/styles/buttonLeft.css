@@ -7,6 +7,7 @@
     position: relative;
     line-height: 40px;
     color: #fff;
+    text-align: center;
 }
 
 .buttonLeft::before {

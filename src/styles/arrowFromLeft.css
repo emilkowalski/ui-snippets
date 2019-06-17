@@ -1,0 +1,40 @@
+.arrowFromLeft {
+    padding: 11px 38px;
+    overflow: hidden;
+    background: #474E51;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.arrowFromLeft div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrowFromLeft:hover span {
+    transform: translateX(13px);
+}
+
+.arrowFromLeft:hover svg {
+    opacity: 1;
+    transform: translateX(15px);
+}
+
+.arrowFromLeft span {
+    margin-left: 15px;
+    transition: transform .3s cubic-bezier(.455,.03,.515,.955);
+}
+
+.arrowFromLeft svg {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    fill: white;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity .3s .05s cubic-bezier(.455,.03,.515,.955), transform .3s .05s cubic-bezier(.455,.03,.515,.955);
+}
+
