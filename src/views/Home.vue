@@ -222,6 +222,12 @@ export default {
           category: 'button',
           text: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" width="9" height="9"> <path d="M0 0l7 4.5L0 9V0z"></path></svg><span>Hover me</span>',
         },
+        {
+          rawCss: this.rawCss.pressDown,
+          className: 'pressDown',
+          category: 'button',
+          text: 'Hover me',
+        },
       ];
     },
     filteredBoxes() {
