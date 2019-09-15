@@ -1,33 +1,33 @@
 /* eslint-disable */
 <template>
-    <!-- eslint-disable max-len -->
-    <div id="home">
-        <h3>Click on the animation to copy.</h3>
-        <div class="selectBox">
-            <select v-model="filtered" @change="updateVisibleBoxes">
-                <option value="all" selected disabled>Filter results</option>
-                <option value="all">All effects</option>
-                <option value="animation">Animations</option>
-                <option value="text">Text</option>
-                <option value="button">Buttons</option>
-            </select>
-        </div>
-        <div class="wrapper">
-            <Box :key="box.rawCss" v-bind="box" v-for="box in visibleBoxes">
-                <div slot="innerHtml" v-html="box.text"></div>
-            </Box>
-        </div>
-        <transition name="fade">
-            <FlashMessage v-if="isActive"></FlashMessage>
-        </transition>
+  <!-- eslint-disable max-len -->
+  <div id="home">
+    <h3>Click on the animation to copy.</h3>
+    <div class="selectBox">
+      <select v-model="filtered" @change="updateVisibleBoxes">
+        <option value="all" selected disabled>Filter results</option>
+        <option value="all">All effects</option>
+        <option value="animation">Animations</option>
+        <option value="text">Text</option>
+        <option value="button">Buttons</option>
+      </select>
     </div>
+    <div class="wrapper">
+      <Box :key="box.rawCss" v-bind="box" v-for="box in visibleBoxes">
+        <div slot="innerHtml" v-html="box.text"></div>
+      </Box>
+    </div>
+    <transition name="fade">
+      <FlashMessage v-if="isActive"></FlashMessage>
+    </transition>
+  </div>
 </template>
 
 <script>
+import { mapState } from 'vuex';
 import rawCss from '@/styles/index';
 import Box from '@/components/Box.vue';
 import FlashMessage from '@/components/FlashMessage.vue';
-import { mapState } from 'vuex';
 
 export default {
   name: 'home',
@@ -228,6 +228,12 @@ export default {
           category: 'button',
           text: 'Hover me',
         },
+        {
+          rawCss: this.rawCss.magnifyBorder,
+          className: 'magnifyBorder',
+          category: 'button',
+          text: 'Hover me',
+        },
       ];
     },
     filteredBoxes() {
@@ -239,74 +245,74 @@ export default {
     ...mapState(['isActive']),
   },
 };
-</script>
+</script>speed={100}
 
 <style lang="scss">
-    @import url("https://use.typekit.net/moy8qkv.css");
+  @import url("https://use.typekit.net/moy8qkv.css");
 
-    .wrapper {
-        width: 80%;
-        margin: 0 auto 4rem auto;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        justify-items: center;
-        align-items: center;
-        grid-gap: 15px;
-        padding: 20px;
+  .wrapper {
+    width: 80%;
+    margin: 0 auto 4rem auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 15px;
+    padding: 20px;
 
-        @media (max-width: 1000px) {
-            width: 100%;
-            grid-template-columns: 1fr 1fr;
-        }
+    @media (max-width: 1000px) {
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    margin-top: 0;
+  }
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: all 0.5s;
+  }
+
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */
+  {
+    opacity: 0;
+  }
+
+  select {
+    border: 1px solid #dae0e7;
+    color: #474e51;
+    background: transparent;
+    font-size: 18px;
+    padding: 7px 15px;
+    width: 100%;
+    -webkit-appearance: none;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    outline: 0;
+  }
+
+  .selectBox {
+    position: relative;
+    width: 200px;
+    display: block;
+    margin: 0 auto 40px auto;
+
+    @media (max-width: 992px) {
+      width: 160px;
     }
 
-    h3 {
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 4rem;
-        margin-top: 0;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 48%;
+      right: 16px;
+      height: 6px;
+      width: 10px;
+      background: url("../assets/images/down-arrow.svg") no-repeat;
     }
-
-    .fade-enter-active,
-    .fade-leave-active {
-        transition: all 0.5s;
-    }
-
-    .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */
-    {
-        opacity: 0;
-    }
-
-    select {
-        border: 1px solid #dae0e7;
-        color: #474e51;
-        background: transparent;
-        font-size: 18px;
-        padding: 7px 15px;
-        width: 100%;
-        -webkit-appearance: none;
-        box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-        outline: 0;
-    }
-
-    .selectBox {
-        position: relative;
-        width: 200px;
-        display: block;
-        margin: 0 auto 40px auto;
-
-        @media (max-width: 992px) {
-            width: 160px;
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            top: 48%;
-            right: 16px;
-            height: 6px;
-            width: 10px;
-            background: url("../assets/images/down-arrow.svg") no-repeat;
-        }
-    }
+  }
 </style>

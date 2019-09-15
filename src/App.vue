@@ -6,14 +6,14 @@
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue';
+  import NavBar from './components/NavBar.vue';
 
-export default {
-  name: 'app',
-  components: {
-    NavBar,
-  },
-};
+  export default {
+    name: 'app',
+    components: {
+      NavBar,
+    },
+  };
 </script>
 
 <style lang="scss">
@@ -57,7 +57,7 @@ export default {
       }
     }
 
-    .router-link-active{
+    .router-link-active {
       text-decoration: underline;
     }
   }
