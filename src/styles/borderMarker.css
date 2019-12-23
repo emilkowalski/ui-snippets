@@ -1,19 +1,21 @@
 .borderMarker {
-    position: relative;
+  position: relative;
 }
 
 .borderMarker::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 70%;
-    left: -0.1px;
-    right: -0.1px;
-    bottom: 0;
-    transition: top .1s ease-in-out;
-    background-color: rgba(87,120,243,0.5);
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -0.1px;
+  right: -0.1px;
+  bottom: 0;
+  height: 100%;
+  transform: scaleY(.3);
+  transition: transform .1s ease-in-out;
+  transform-origin: bottom;
+  background-color: rgba(87, 120, 243, 0.5);
 }
 
 .borderMarker:hover::after {
-    top: 0;
+  transform: scaleY(1);
 }
