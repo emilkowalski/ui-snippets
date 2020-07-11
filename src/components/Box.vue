@@ -1,43 +1,42 @@
 <template>
-    <div class="box" v-clipboard:copy="css" @click="isCopied">
-        <div :class="className">
-            <slot></slot>
-            <slot name="innerHtml"></slot>
-        </div>
+  <div class="box" v-clipboard:copy="css" @click="isCopied">
+    <div :class="className">
+      <slot></slot>
+      <slot name="innerHtml"></slot>
     </div>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'Box.vue',
+  name: "Box.vue",
 
   data() {
     return {
-      css: this.rawCss,
-    };
+      css: this.rawCss
+    }
   },
 
   props: {
     rawCss: {
       type: String,
-      default: '',
+      default: ""
     },
     className: {
       type: String,
-      default: '',
-    },
+      default: ""
+    }
   },
 
   methods: {
     isCopied() {
-      this.$store.dispatch('messageHandler');
-    },
-  },
-};
+      this.$store.dispatch("messageHandler")
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
-
 .box {
   min-height: 135px;
   min-width: 100%;
@@ -47,5 +46,4 @@ export default {
   justify-content: center;
   transition: 0.2s;
 }
-
 </style>

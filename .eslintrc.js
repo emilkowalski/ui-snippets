@@ -3,9 +3,10 @@ module.exports = {
   env: {
     node: true,
   },
-  extends: [
-    'plugin:vue/essential',
-    '@vue/airbnb',
+  "extends": [
+    "plugin:vue/essential",
+    "plugin:prettier/recommended",
+    "eslint:recommended"
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
@@ -13,9 +14,9 @@ module.exports = {
     "object-curly-newline": ["error", {
       "ExportDeclaration": { "multiline": true, "minProperties": 5 }
     }],
-    "max-len": [2, {"code": 150, "tabWidth": 4, "ignoreUrls": true}]
+    "max-len": [2, { "code": 150, "tabWidth": 4, "ignoreUrls": true }]
   },
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: 'babel-eslint', 1
   },
 };
