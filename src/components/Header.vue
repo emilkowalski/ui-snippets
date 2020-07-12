@@ -1,7 +1,7 @@
 <template>
   <header class="py-8 flex justify-between">
     <a href="/" class="flex items-center font-bold text-2xl text-black">
-      <BaseIcon class="h-6 w-36" viewBox="0 0 144.52 20.85" icon="logo" />
+      <BaseIcon class="h-6 w-40" icon="logo" />
     </a>
     <div>
       <a
@@ -15,5 +15,11 @@
 </template>
 
 <script>
-export default {};
+import BaseIcon from "@/components/BaseIcon";
+
+export default {
+  components: {
+    BaseIcon
+  }
+};
 </script>
