@@ -1,0 +1,23 @@
+.arrowScrollDown svg {
+    fill: hsl(243, 80%, 62%);
+    animation: arrowAnimation 1.5s infinite ease-out;
+}
+
+
+@keyframes arrowAnimation {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0
+    }
+    30% {
+      opacity: 1
+    }
+    60% {
+      opacity: 1
+    }
+    to {
+      -webkit-transform: translateY(10px);
+      transform: translateY(10px);
+      opacity: 0
+    }
+  }

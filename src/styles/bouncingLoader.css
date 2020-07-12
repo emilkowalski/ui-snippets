@@ -2,7 +2,8 @@
     display: inline-block;
     width: 13px;
     height: 13px;
-    background: hsl(243, 80%, 62%);;
+    background: hsl(243, 80%, 62%);
+    margin-bottom: -5px;
     border-radius: 50%;
     animation: bouncing-loader 0.6s infinite alternate;
 }

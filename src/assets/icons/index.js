@@ -20,14 +20,7 @@ const icons = {
         fill: "#667eea"
       }
     ]
-  },
-  arrowRight: {
-    paths: [
-      {
-        path:
-          "M1.06 8.43a.5.5 0 01-.71 0l-.2-.2A.49.49 0 010 7.87V.7A.49.49 0 01.15.35l.2-.2a.5.5 0 01.71 0l3.79 3.79a.48.48 0 010 .7z"
-      }
-    ]
   }
 };
+
 export default icons;

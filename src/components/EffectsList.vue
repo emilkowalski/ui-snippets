@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-5 gap-10 py-20">
+  <div class="grid grid-cols-5 row-gap-20 col-gap-10 py-20">
     <Effect
       v-for="effect in effects"
       :key="effect.className"
@@ -10,6 +10,7 @@
 
 <script>
 import Effect from "@/components/Effect";
+
 export default {
   components: { Effect },
   props: {

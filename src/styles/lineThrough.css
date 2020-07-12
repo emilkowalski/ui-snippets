@@ -1,0 +1,39 @@
+.lineThrough {
+    color: #474E51;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.lineThrough::before {
+     content: '';
+     position: absolute;
+     top: 50%;
+     background: hsl(243, 80%, 62%);;
+     height: 2px;
+     left: 0;
+     width: 100%;
+     transform: translate3d(-100%, 0, 0);
+     transition: transform 0.7s ease-in-out;
+ }
+
+.lineThrough::after {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: hsl(243, 80%, 62%);;
+     transform: translate3d(-100%, 0, 0) translate3d(-1px, 0, 0);
+     transition: transform 0.7s ease-in-out;
+ }
+
+.lineThrough:hover::after {
+     transform: translate3d(100%, 0, 0) translate3d(1px, 0, 0);
+ }
+
+
+.lineThrough:hover::before {
+    transform: translate3d(0, 0, 0);
+}

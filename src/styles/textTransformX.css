@@ -1,0 +1,9 @@
+.textTransformX {
+    color: hsl(222, 25%, 14%);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.textTransformX:hover {
+    transform: translateX(4px);
+    color: hsl(243, 80%, 62%);
+}

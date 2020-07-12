@@ -1,0 +1,39 @@
+.arrowFromLeft {
+    overflow: hidden;
+    padding: 8px 30px;
+    border-radius: 6px;
+    background-color: hsl(222, 100%, 95%);
+    color: hsl(243, 80%, 62%);
+    position: relative;
+}
+
+.arrowFromLeft div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrowFromLeft:hover span {
+    transform: translateX(15px);
+}
+
+.arrowFromLeft:hover svg {
+    opacity: 1;
+    transform: translate(15px, -50%);
+}
+
+.arrowFromLeft span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(.455,.03,.515,.955);
+}
+
+.arrowFromLeft svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    fill: hsl(243, 80%, 62%);
+    opacity: 0;
+    transform: translate(-10px, -50%);
+    transition: opacity .3s .05s cubic-bezier(.455,.03,.515,.955), transform .3s .05s cubic-bezier(.455,.03,.515,.955);
+}
