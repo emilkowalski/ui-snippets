@@ -1,0 +1,23 @@
+.visibleBorderLeftRight {
+    display: inline-block;
+    color: hsl(222, 25%, 14%);
+    position: relative;
+}
+
+.visibleBorderLeftRight::after {
+     content: '';
+     position: absolute;
+     width: 100%;
+     transform: scaleX(1);
+     height: 2px;
+     bottom: 0;
+     left: 0;
+     background-color: hsl(243, 80%, 62%);
+     transform-origin: bottom left;
+     transition: transform .3s ease-in-out;
+ }
+
+.visibleBorderLeftRight:hover::after {
+     transform: scaleX(0);
+     transform-origin: bottom right;
+ }

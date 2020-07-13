@@ -1,5 +1,5 @@
 .lineThrough {
-    color: #474E51;
+    color: hsl(222, 25%, 14%);
     text-decoration: none;
     position: relative;
     overflow: hidden;
@@ -9,11 +9,11 @@
      content: '';
      position: absolute;
      top: 50%;
-     background: hsl(243, 80%, 62%);;
+     background: hsl(243, 80%, 62%);
      height: 2px;
      left: 0;
      width: 100%;
-     transform: translate3d(-100%, 0, 0);
+     transform: translate3d(-101%, 0, 0);
      transition: transform 0.7s ease-in-out;
  }
 

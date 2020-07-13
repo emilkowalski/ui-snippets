@@ -1,0 +1,21 @@
+.pulseAnim {
+    display: block;
+    padding: 16px;
+    border-radius: 50%;
+    background:hsl(243, 80%, 62%);
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(88, 120, 243, 0.4);
+    animation: pulseAnim 2s infinite;
+}
+
+@keyframes pulseAnim {
+    0% {
+        box-shadow: 0 0 0 0 rgba(88, 120, 243, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(88, 120, 243, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(88, 120, 243, 0);
+    }
+}
