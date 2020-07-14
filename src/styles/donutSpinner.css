@@ -1,6 +1,6 @@
 .donutSpinner {
     display: inline-block;
-    border: 4px solid rgba(0, 0, 0, 0.1);
+    border: 4px solid hsl(222, 100%, 95%);;
     border-left-color: hsl(243, 80%, 62%);
     border-radius: 50%;
     width: 30px;

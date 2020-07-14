@@ -1,6 +1,6 @@
 const cssRequire = require.context("!raw-loader!./", true, /.css$/);
 
-const exported = {};
+let exported = {};
 
 cssRequire.keys().forEach(cssFilePath => {
   exported[cssFilePath.replace("./", "").replace(".css", "")] = cssRequire(

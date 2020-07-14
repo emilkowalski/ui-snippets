@@ -2,6 +2,7 @@
     padding: 8px 16px;
     background-color: transparent;
     border: 2px solid hsl(243, 80%, 62%);
+    border-radius: 6px;
     position: relative;
     overflow: hidden;
     transition: all 0.5s cubic-bezier(1,.15,.34,.92)
