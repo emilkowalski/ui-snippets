@@ -2,6 +2,7 @@
   <div
     class="cursor-pointer flex justify-center items-center"
     v-clipboard:copy="effect.css"
+    v-clipboard:success="onSucces"
   >
     <div :class="effect.className" v-html="effect.html"></div>
   </div>
@@ -12,6 +13,11 @@ export default {
     effect: {
       type: Object,
       required: true
+    }
+  },
+  methods: {
+    onSucces() {
+      this.$store.dispatch("displayNotification");
     }
   }
 };

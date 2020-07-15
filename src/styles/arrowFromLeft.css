@@ -1,6 +1,6 @@
 .arrowFromLeft {
     overflow: hidden;
-    padding: 8px 30px;
+    padding: 12px 30px;
     border-radius: 6px;
     background-color: hsl(222, 100%, 95%);
     color: hsl(243, 80%, 62%);

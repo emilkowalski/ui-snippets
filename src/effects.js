@@ -100,6 +100,11 @@ const initialEffects = [
     className: "pushUpBtn",
     category: "button",
     html: "Hover me"
+  },
+  {
+    className: "snapLeftBtn",
+    category: "button",
+    html: "<span>Hover me</span>"
   }
 ];
 

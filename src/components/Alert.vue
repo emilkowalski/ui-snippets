@@ -1,6 +1,6 @@
 <template>
-  <div class="fixed bottom-0 mb-16">
-    <div class="flex justify-center rounded-md bg-green-50 p-4 mx-auto">
+  <div class="fixed bottom-0 inset-x-0 flex">
+    <div class="flex justify-center rounded-md mb-16 bg-green-100 p-4 mx-auto">
       <div class="flex-shrink-0">
         <svg
           class="h-5 w-5 text-green-400"
