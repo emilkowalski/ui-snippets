@@ -4,10 +4,10 @@
     color: hsl(243, 80%, 62%);
     border-radius: 6px;
     border-bottom: 4px solid hsl(221, 89%, 85%);
-    transition: all 0.1s;
+    transition: all 0.1s ease-in-out;
 }
 
-.pressDownButton:active {
+.pressDownButton:hover {
     border-bottom-width: 0;
     margin-top: 3px;
 }

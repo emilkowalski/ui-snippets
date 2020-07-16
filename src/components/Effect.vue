@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     onSucces() {
-      this.$store.dispatch("displayNotification");
+      this.$store.dispatch("addNotification");
     }
   }
 };

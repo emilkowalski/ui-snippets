@@ -1,0 +1,15 @@
+.magnifyBtn {
+    padding: 12px 24px;
+    background-color: hsl(222, 100%, 95%);
+    color: hsl(243, 80%, 62%);
+    border-radius: 6px;
+    transition: transform 250ms ease-in-out;
+}
+
+.magnifyBtn:hover {
+    transform: scale(1.10);
+}
+
+.magnifyBtn:active {
+    transform: scale(.9);
+}

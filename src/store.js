@@ -3,24 +3,32 @@ import Vuex from "vuex";
 
 Vue.use(Vuex);
 
+let nextId = 1;
+
 export default new Vuex.Store({
   state: {
-    isNotificationActive: false
+    notifications: []
   },
-  mutations: {
-    DISPLAY_NOTIFICATION(state) {
-      state.isNotificationActive = true;
+
+  actions: {
+    addNotification({ commit }) {
+      commit("pushNotification");
     },
-    HIDE_NOTIFICATION(state) {
-      state.isNotificationActive = false;
+    removeNotification({ commit }, notificationToRemove) {
+      commit("deleteNotification", notificationToRemove);
     }
   },
-  actions: {
-    displayNotification({ commit }) {
-      commit("DISPLAY_NOTIFICATION");
-      setTimeout(() => {
-        commit("HIDE_NOTIFICATION");
-      }, 2250);
+
+  mutations: {
+    pushNotification(state) {
+      state.notifications.push({
+        id: nextId++
+      });
+    },
+    deleteNotification(state, notificationToRemove) {
+      state.notifications = state.notifications.filter(
+        notification => notification.id !== notificationToRemove.id
+      );
     }
   }
 });

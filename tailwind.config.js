@@ -1,7 +1,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: [],
+  purge: ["./src/**/*.vue"],
   theme: {
     extend: {
       fontFamily: {
@@ -9,6 +9,8 @@ module.exports = {
       }
     }
   },
-  variants: {},
+  corePlugins: {
+    float: false
+  },
   plugins: [require("@tailwindcss/ui")]
 };

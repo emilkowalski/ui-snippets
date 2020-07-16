@@ -16,9 +16,33 @@
       </div>
       <div class="ml-3">
         <p class="text-sm leading-5 font-medium text-green-800">
-          Copied to clipboard
+          Copied to clipboard 🎉
         </p>
       </div>
     </div>
   </div>
 </template>
+<script>
+export default {
+  props: {
+    notification: {
+      type: Object,
+      required: true
+    }
+  },
+  data() {
+    return {
+      timeout: null
+    };
+  },
+  beforeDestroy() {
+    clearTimeout(this.timeout);
+  },
+  mounted() {
+    this.timeout = setTimeout(
+      () => this.$store.dispatch("removeNotification", this.notification),
+      2000
+    );
+  }
+};
+</script>

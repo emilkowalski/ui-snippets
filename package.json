@@ -27,6 +27,7 @@
     "sass-loader": "^8.0.2",
     "tailwindcss": "^1.4.6",
     "vue-clipboard2": "^0.3.1",
+    "vue-svg-loader": "^0.16.0",
     "vue-template-compiler": "^2.6.11",
     "vuex": "^3.5.1"
   }

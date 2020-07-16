@@ -1,0 +1,13 @@
+.magnifyText {
+    color: hsl(222, 25%, 14%);
+    transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.magnifyText:hover {
+    transform: scale(1.05);
+    color: hsl(243, 80%, 62%);
+}
+
+.magnifyText:active {
+    transform: scale(.9);
+}

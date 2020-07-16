@@ -27,7 +27,7 @@ const initialEffects = [
   {
     className: "pressDownButton",
     category: "button",
-    html: "Click me"
+    html: "Hover me"
   },
   {
     className: "bouncingLoader",
@@ -105,6 +105,36 @@ const initialEffects = [
     className: "snapLeftBtn",
     category: "button",
     html: "<span>Hover me</span>"
+  },
+  {
+    className: "magnifyBtn",
+    category: "button",
+    html: "Hover & click me"
+  },
+  {
+    className: "magnifyText",
+    category: "text",
+    html: "Hover & click me"
+  },
+  {
+    className: "magnifyBorder",
+    category: "button",
+    html: "Hover me"
+  },
+  {
+    className: "borderMarker",
+    category: "text",
+    html: "<span>Hover me</span>"
+  },
+  {
+    className: "buttonOverlay",
+    category: "text",
+    html: "<span>Hover me</span>"
+  },
+  {
+    className: "gradientText",
+    category: "text",
+    html: "Hover me"
   }
 ];
 
