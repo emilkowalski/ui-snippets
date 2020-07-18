@@ -1,6 +1,6 @@
 <template>
   <div
-    class="cursor-pointer flex justify-center items-center"
+    class="cursor-pointer flex justify-center items-center h-16"
     v-clipboard:copy="effect.css"
     v-clipboard:success="onSucces"
   >
