@@ -130,11 +130,6 @@ const initialEffects = [
     className: "buttonOverlay",
     category: "text",
     html: "<span>Hover me</span>"
-  },
-  {
-    className: "gradientText",
-    category: "text",
-    html: "Hover me"
   }
 ];
 

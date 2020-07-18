@@ -11,7 +11,6 @@
     right: -1px;
     left: -1px;
     background-color: hsl(243, 80%, 62%);
-    z-index: -1;
     border-radius: 50%;
     transform: scale(0);
     transition: transform .3s cubic-bezier(.215,.61,.355,1);
