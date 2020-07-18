@@ -1,24 +1,29 @@
-# cssanimationssnippetsv2
+# CSSeffectsSnippets
 
-## Project setup
-```
-yarn install
-```
+https://emilkowalski.github.io/css-effects-snippets/
 
-### Compiles and hot-reloads for development
+## Usage
+
+Click on the animation to copy it to your clipboard
+
+## How to start?
+Use yarn
 ```
+yarn 
+
 yarn serve
 ```
+or npm
+```
+npm install
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
+npm run serve
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## How to contribute?
+
+ - Fork it
+ - Create your branch: `git checkout -b my-feature`
+ - Commit: `git commit -am 'Add new feature'`
+ - Push to your branch: `git push origin my-new-feature`
+ - Submit a PR 🎉
