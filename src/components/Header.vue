@@ -1,6 +1,9 @@
 <template>
   <header class="py-8 flex justify-between">
-    <a href="/" class="flex items-center font-bold text-2xl text-black">
+    <a
+      href="/css-effects-snippets"
+      class="flex items-center font-bold text-2xl text-black"
+    >
       <Logo class="h-6 w-auto" />
     </a>
     <div>
