@@ -1,7 +1,7 @@
 .donutSpinner {
     display: inline-block;
-    border: 4px solid hsl(222, 100%, 95%);;
-    border-left-color: hsl(243, 80%, 62%);
+    border: 4px solid hsl(222 100% 95%);
+    border-left-color: hsl(243 80% 62%);
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -9,10 +9,7 @@
 }
 
 @keyframes donut-spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
+    to {
+        transform: rotate(1turn);
     }
 }
