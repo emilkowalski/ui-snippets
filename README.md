@@ -25,5 +25,5 @@ npm run serve
  - Fork it
  - Create your branch: `git checkout -b my-feature`
  - Commit: `git commit -am 'Add new feature'`
- - Push to your branch: `git push origin my-new-feature`
+ - Push to your branch: `git push origin my-feature`
  - Submit a PR 🎉
