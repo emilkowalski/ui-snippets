@@ -6,7 +6,7 @@
       z-index: 1;
       position: relative;
   }
-  
+
   .borderMarker::after {
     content: "";
     position: absolute;
@@ -15,12 +15,11 @@
     bottom: 0;
     height: 100%;
     transform: scaleY(.3);
-    transition: transform .1s ease-in-out;
+    transition: transform .6s cubic-bezier(0.53, 0.21, 0, 1);
     transform-origin: bottom;
     background-color: hsl(222, 100%, 93%);
   }
-  
+
   .borderMarker:hover::after {
     transform: scaleY(1);
   }
-  

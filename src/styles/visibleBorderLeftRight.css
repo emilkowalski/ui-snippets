@@ -14,7 +14,7 @@
      left: 0;
      background-color: hsl(243, 80%, 62%);
      transform-origin: bottom left;
-     transition: transform .3s ease-in-out;
+     transition: transform .6s cubic-bezier(0.53, 0.21, 0, 1);
  }
 
 .visibleBorderLeftRight:hover::after {

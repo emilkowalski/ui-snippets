@@ -3,7 +3,11 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <Header />
       <h2
-        class="text-gray-900 w-56 mx-auto text-xl font-medium mt-10 text-center sm:w-auto sm:mx-0"
+        class="text-black w-56 mx-auto text-xl mt-10 text-center sm:w-auto sm:mx-0"
+        style="font-size: 24px;
+            font-weight: 500;
+            line-height: 1.25;
+            letter-spacing: -0.019em;"
       >
         Click on the animation to copy the css
       </h2>

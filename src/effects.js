@@ -130,6 +130,11 @@ const initialEffects = [
     className: "buttonOverlay",
     category: "text",
     html: "<span>Hover me</span>"
+  },
+  {
+    className: "horizontalOverlay",
+    category: "text",
+    html: "<span>Hover me</span>"
   }
 ];
 
