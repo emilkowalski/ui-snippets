@@ -15,5 +15,18 @@ export const { styled, getCssString, global } = createCss({
             medium: "500",
             bold: "600",
         },
+        space: {
+            1: "4px",
+            2: "8px",
+            3: "16px",
+            4: "32px",
+            5: "64px",
+            6: "128px",
+            7: "256px",
+            8: "512px",
+        },
+        radii: {
+            1: "7px",
+        },
     },
 });
