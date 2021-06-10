@@ -103,6 +103,11 @@
   resolved "https://registry.yarnpkg.com/@opentelemetry/context-base/-/context-base-0.14.0.tgz#c67fc20a4d891447ca1a855d7d70fa79a3533001"
   integrity sha512-sDOAZcYwynHFTbLo6n8kIbLiVF3a3BLkrmehJUyEbT9F+Smbi47kLGS2gG2g0fjBLR/Lr1InPD7kXL7FaTqEkw==
 
+"@stitches/react@^0.2.0-canary.5":
+  version "0.2.0-canary.5"
+  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-0.2.0-canary.5.tgz#52c48ed7a092997fbb85bead1f22fcf41ce4de9b"
+  integrity sha512-Ym4tLUmKpSQOwwsDIAGGWsz++QD+vO63geEJUzxg6pqDEb8svO4g8aJg5XmOUS8RDhzyh4abaX6hR6/TAZwj1A==
+
 "@types/node@*":
   version "15.12.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-15.12.2.tgz#1f2b42c4be7156ff4a6f914b2fb03d05fa84e38d"
