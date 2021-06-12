@@ -5,11 +5,12 @@ import { styled } from "stitches.config";
 import snippets from "@components/Snippets";
 
 const Grid = ({ children }) => {
+    console.log(snippets);
     return (
         <Wrapper>
-            {snippets.map((Snippet) => (
-                <GridItem>
-                    <Snippet>Hover me</Snippet>
+            {snippets.map(({ component: Component, stitches }) => (
+                <GridItem stitchesStyling={stitches}>
+                    <Component />
                 </GridItem>
             ))}
         </Wrapper>

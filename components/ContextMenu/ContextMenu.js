@@ -2,20 +2,23 @@ import { styled } from "stitches.config";
 import { keyframes } from "@stitches/react";
 import * as ContextMenu from "@radix-ui/react-context-menu";
 
-export default ({ children }) => (
-    <ContextMenu.Root>
-        <ContextMenu.Trigger>{children}</ContextMenu.Trigger>
-        <Content>
-            <Item onSelect={() => console.log("cut")}>CSS</Item>
-            <Item onSelect={() => console.log("cut")}>SCSS</Item>
-            <Item onSelect={() => console.log("copy")}>Stitches</Item>
-            <Item onSelect={() => console.log("paste")}>Styled Components</Item>
-            <Separator />
-            <Item onSelect={() => console.log("paste")}>JSX</Item>
-            <Item onSelect={() => console.log("paste")}>HTML</Item>
-        </Content>
-    </ContextMenu.Root>
-);
+export default ({ children, stitchesStyling }) => {
+    const copyToClipboard = async (value) => {
+        await navigator.clipboard.writeText(location.href);
+        console.log("Page URL copied to clipboard");
+    };
+    return (
+        <ContextMenu.Root>
+            <ContextMenu.Trigger>{children}</ContextMenu.Trigger>
+            <Content>
+                <Item onSelect={() => copyToClipboard(stitchesStyling)}>CSS</Item>
+                <Item onSelect={() => console.log("cut")}>SCSS</Item>
+                <Item onSelect={() => console.log("copy")}>Stitches</Item>
+                <Item onSelect={() => console.log("paste")}>Styled Components</Item>
+            </Content>
+        </ContextMenu.Root>
+    );
+};
 
 const reveal = keyframes({
     "0%": { transform: "scale(0.9)", opacity: 0 },
