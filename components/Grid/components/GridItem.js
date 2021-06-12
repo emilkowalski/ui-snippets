@@ -1,13 +1,19 @@
 import { styled } from "stitches.config";
 
+import ContextMenu from "@components/ContextMenu";
+
 const GridItem = ({ children }) => {
-    return <Wrapper>{children}</Wrapper>;
+    return (
+        <ContextMenu>
+            <Wrapper>{children}</Wrapper>
+        </ContextMenu>
+    );
 };
 
 const Wrapper = styled("div", {
-    height: "120px",
+    height: 120,
     backgroundColor: "$darkGray",
-    borderRadius: "$1",
+    borderRadius: "$2",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",

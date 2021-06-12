@@ -27,6 +27,7 @@ export const { styled, getCssString, global } = createCss({
         },
         radii: {
             1: "7px",
+            2: "7px",
         },
     },
 });

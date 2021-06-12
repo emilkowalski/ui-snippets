@@ -2,14 +2,16 @@
 import GridItem from "./components/GridItem";
 
 import { styled } from "stitches.config";
-import UnderlineLeftRight from "@styles/underlineLeftRight";
+import snippets from "@components/Snippets";
 
 const Grid = ({ children }) => {
     return (
         <Wrapper>
-            <GridItem>
-                <UnderlineLeftRight>Hover me</UnderlineLeftRight>
-            </GridItem>
+            {snippets.map((Snippet) => (
+                <GridItem>
+                    <Snippet>Hover me</Snippet>
+                </GridItem>
+            ))}
         </Wrapper>
     );
 };

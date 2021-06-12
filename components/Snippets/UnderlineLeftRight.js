@@ -1,6 +1,10 @@
 import { styled } from "stitches.config.js";
 
-const UnderlineLeftRight = styled("a", {
+const UnderlineLeftRight = () => {
+    return <Wrapper>Hover me</Wrapper>;
+};
+
+const Wrapper = styled("a", {
     display: "inline-block",
     position: "relative",
     cursor: "pointer",

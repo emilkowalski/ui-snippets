@@ -1,4 +1,5 @@
 import { globalStyles } from "@styles/global";
+import "@styles/animations.css";
 
 import Header from "@components/Header";
 
