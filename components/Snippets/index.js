@@ -1,5 +1,6 @@
-import UnderlineLeftRight, { stitchesStyling, cssStyling, scssStyling } from "./UnderlineLeftRight";
+import * as UnderlineLeftRight from "./UnderlineLeftRight";
+import * as Pulse from "./Pulse";
 
-const allSnippets = [{ component: UnderlineLeftRight, stitchesStyling, cssStyling, scssStyling }];
+const allSnippets = [UnderlineLeftRight, Pulse];
 
 export default allSnippets;

@@ -1,6 +1,6 @@
 import { createCss } from "@stitches/react";
 
-export const { styled, getCssString, global } = createCss({
+export const { styled, getCssString, global, keyframes } = createCss({
     theme: {
         fonts: {
             sans: "Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
@@ -10,6 +10,7 @@ export const { styled, getCssString, global } = createCss({
             white: "hsl(241, 3%, 93%)",
             gray: "hsl(205, 5%, 53%)",
             darkGray: "hsl(197, 6%, 12%)",
+            primary: "hsl(193, 95%, 45%)",
         },
         fontWeights: {
             medium: "500",
@@ -27,7 +28,6 @@ export const { styled, getCssString, global } = createCss({
         },
         radii: {
             1: "7px",
-            2: "7px",
         },
     },
 });

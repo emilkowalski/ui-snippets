@@ -13,4 +13,7 @@ export const globalStyles = global({
     "*": {
         boxSizing: "border-box",
     },
+    ".toast-container": {
+        bottom: 20,
+    },
 });

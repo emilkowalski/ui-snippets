@@ -7,7 +7,7 @@ const GridItem = ({ children, stitchesStyling }) => {
 const Wrapper = styled("div", {
     height: 120,
     backgroundColor: "$darkGray",
-    borderRadius: "$2",
+    borderRadius: "$1",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",

@@ -1,10 +1,8 @@
 import { styled } from "stitches.config.js";
 
-const UnderlineLeftRight = () => {
+const Component = () => {
     return <Wrapper>Hover me</Wrapper>;
 };
-
-export default UnderlineLeftRight;
 
 const Wrapper = styled("a", {
     display: "inline-block",
@@ -19,7 +17,7 @@ const Wrapper = styled("a", {
         height: 1,
         top: "110%",
         left: 0,
-        backgroundColor: "hsl(193, 95%, 71%)",
+        backgroundColor: "$white",
         transformOrigin: "bottom right",
         transition: "transform .4s cubic-bezier(.86,0,.07,1)",
     },
@@ -30,7 +28,7 @@ const Wrapper = styled("a", {
     },
 });
 
-export const stitchesStyling = `
+const stitchesStyling = `
 const ExampleWrapper = styled("a", {
     display: "inline-block",
     position: "relative",
@@ -43,7 +41,7 @@ const ExampleWrapper = styled("a", {
         height: 1,
         top: "110%",
         left: 0,
-        backgroundColor: "hsl(193, 95%, 71%)",
+        backgroundColor: "white",
         transformOrigin: "bottom right",
         transition: "transform .4s cubic-bezier(.86,0,.07,1)",
     },
@@ -54,11 +52,11 @@ const ExampleWrapper = styled("a", {
     },
 });`;
 
-export const cssStyling = `
+const cssStyling = `
 .exampleClass {
     display: inline-block;
     position: relative;
-    color: hsl(222, 25%, 14%);
+    color: white;
   }
 
   .exampleClass::after {
@@ -69,7 +67,7 @@ export const cssStyling = `
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: hsl(243, 80%, 62%);
+    background-color: white;
     transform-origin: bottom right;
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -80,13 +78,13 @@ export const cssStyling = `
   }
 `;
 
-export const scssStyling = `
+const scssStyling = `
 .exampleClass {
     display: inline-block;
     position: relative;
-    color: hsl(222, 25%, 14%);
+    color: white;
 
-	&::after {
+	&:after {
 		content: '';
 		position: absolute;
 		width: 100%;
@@ -94,7 +92,7 @@ export const scssStyling = `
 		height: 2px;
 		bottom: 0;
 		left: 0;
-		background-color: hsl(243, 80%, 62%);
+		background-color: white;
 		transform-origin: bottom right;
 		transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
 	  }
@@ -105,3 +103,5 @@ export const scssStyling = `
 	}
   }
 `;
+
+export { stitchesStyling, cssStyling, scssStyling, Component };

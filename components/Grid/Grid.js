@@ -7,9 +7,9 @@ import ContextMenu from "@components/ContextMenu";
 const Grid = ({ children }) => {
     return (
         <Wrapper>
-            {snippets.map(({ component: Component, stitchesStyling, cssStyling, scssStyling }) => (
-                <ContextMenu stitchesStyling={stitchesStyling} cssStyling={cssStyling} scssStyling={scssStyling} key={cssStyling}>
-                    <GridItem key={stitchesStyling}>
+            {snippets.map(({ Component, cssStyling, scssStyling, stitchesStyling }) => (
+                <ContextMenu cssStyling={cssStyling} scssStyling={scssStyling} stitchesStyling={stitchesStyling} key={stitchesStyling}>
+                    <GridItem>
                         <Component />
                     </GridItem>
                 </ContextMenu>
