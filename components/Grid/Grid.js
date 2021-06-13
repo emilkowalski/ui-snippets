@@ -22,6 +22,7 @@ const Wrapper = styled("div", {
     display: "grid",
     gridTemplateColumns: "1fr 1fr 1fr 1fr",
     gap: "$4",
+    padding: "$4 0",
 });
 
 export default Grid;

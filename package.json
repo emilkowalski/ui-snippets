@@ -9,8 +9,10 @@
   },
   "dependencies": {
     "@radix-ui/react-context-menu": "^0.0.19",
+    "@radix-ui/react-hover-card": "^0.0.2",
     "@stitches/react": "^0.2.0-canary.5",
     "next": "10.2.3",
+    "qss": "^2.0.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "vercel-toast": "^1.5.3"
