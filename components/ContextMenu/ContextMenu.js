@@ -1,20 +1,30 @@
 import { styled } from "stitches.config";
 import { keyframes } from "@stitches/react";
+import { createToast } from "vercel-toast";
 import * as ContextMenu from "@radix-ui/react-context-menu";
 
-export default ({ children, stitchesStyling }) => {
-    const copyToClipboard = async (value) => {
-        await navigator.clipboard.writeText(location.href);
-        console.log("Page URL copied to clipboard");
+export default ({ children, stitchesStyling, cssStyling, scssStyling }) => {
+    const copyToClipboard = async (styling) => {
+        try {
+            await navigator.clipboard.writeText(styling);
+            createToast("Copied styles to clipboard", {
+                timeout: 3000,
+            });
+        } catch {
+            createToast("Failed to copy", {
+                timeout: 3000,
+                type: "error",
+            });
+        }
     };
+
     return (
         <ContextMenu.Root>
             <ContextMenu.Trigger>{children}</ContextMenu.Trigger>
             <Content>
-                <Item onSelect={() => copyToClipboard(stitchesStyling)}>CSS</Item>
-                <Item onSelect={() => console.log("cut")}>SCSS</Item>
-                <Item onSelect={() => console.log("copy")}>Stitches</Item>
-                <Item onSelect={() => console.log("paste")}>Styled Components</Item>
+                <Item onSelect={() => copyToClipboard(cssStyling)}>CSS</Item>
+                <Item onSelect={() => copyToClipboard(scssStyling)}>SCSS</Item>
+                <Item onSelect={() => copyToClipboard(stitchesStyling)}>Stitches</Item>
             </Content>
         </ContextMenu.Root>
     );

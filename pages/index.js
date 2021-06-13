@@ -1,8 +1,9 @@
 import Container from "@components/Container";
 import Grid from "@components/Grid";
 import Heading from "@components/Heading";
-import Seperator from "@components/Seperator";
+import Seperator from "@components/Separator";
 import Stack from "@components/Stack";
+import Footer from "@components/Footer";
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
                 </Heading>
                 <Seperator />
                 <Grid />
+                <Footer />
             </Stack>
         </Container>
     );

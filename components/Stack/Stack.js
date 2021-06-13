@@ -2,7 +2,7 @@ import { styled } from "stitches.config.js";
 
 const Stack = styled("div", {
     "> * + *": {
-        marginTop: "$4",
+        marginTop: "$5",
     },
 });
 

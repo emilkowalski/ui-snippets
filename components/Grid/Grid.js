@@ -1,17 +1,18 @@
-// TODO: Temporary component to show how it might look like.
-import GridItem from "./components/GridItem";
-
 import { styled } from "stitches.config";
+
 import snippets from "@components/Snippets";
+import GridItem from "./components/GridItem";
+import ContextMenu from "@components/ContextMenu";
 
 const Grid = ({ children }) => {
-    console.log(snippets);
     return (
         <Wrapper>
-            {snippets.map(({ component: Component, stitches }) => (
-                <GridItem stitchesStyling={stitches}>
-                    <Component />
-                </GridItem>
+            {snippets.map(({ component: Component, stitchesStyling, cssStyling, scssStyling }) => (
+                <ContextMenu stitchesStyling={stitchesStyling} cssStyling={cssStyling} scssStyling={scssStyling} key={cssStyling}>
+                    <GridItem key={stitchesStyling}>
+                        <Component />
+                    </GridItem>
+                </ContextMenu>
             ))}
         </Wrapper>
     );

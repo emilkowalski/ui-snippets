@@ -1,13 +1,7 @@
 import { styled } from "stitches.config";
 
-import ContextMenu from "@components/ContextMenu";
-
 const GridItem = ({ children, stitchesStyling }) => {
-    return (
-        <ContextMenu stitchesStyling={stitchesStyling}>
-            <Wrapper>{children}</Wrapper>
-        </ContextMenu>
-    );
+    return <Wrapper>{children}</Wrapper>;
 };
 
 const Wrapper = styled("div", {

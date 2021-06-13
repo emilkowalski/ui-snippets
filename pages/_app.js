@@ -1,4 +1,5 @@
 import { globalStyles } from "@styles/global";
+import "vercel-toast/dist/vercel-toast.css";
 
 import Header from "@components/Header";
 
