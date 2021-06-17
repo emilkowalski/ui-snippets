@@ -1,7 +1,7 @@
 import { styled } from "stitches.config.js";
 
 const Component = () => {
-    return <Wrapper>I'm pulsing</Wrapper>;
+    return <Wrapper>Hover me</Wrapper>;
 };
 
 const Wrapper = styled("a", {
@@ -26,7 +26,7 @@ const exampleWrapper = styled("a", {
     color: "black",
     borderRadius: 7,
     borderBottom: "4px solid hsl(241, 3%, 73%)",
-    transition: "all 0.1s ease-in-out",	
+    transition: "all 0.1s ease-in-out",
     cursor: "pointer",
 
     "&:hover": {
@@ -37,35 +37,35 @@ const exampleWrapper = styled("a", {
 
 const cssStyling = `
 .exampleClass {
+	background-color: white;
     padding: 12px 24px;
-    background-color: black;
-    color: white;
-    border-radius: 7px;
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
-    animation: pulse 1.75s infinite cubic-bezier(0.66, 0, 0, 1);
+    color: black;
+    border-radius: 6px;
+    border-bottom: 4px solid hsl(241, 3%, 73%);
+    border-top: 0px;
+    transition: all 0.1s ease-in-out;
 }
 
-@keyframes pulse {
-    to {
-        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
-    }
+.exampleClass:hover {
+	border-bottom-width: 0;
+    border-top-width: 4px;
 }
 `;
 
 const scssStyling = `
 .exampleClass {
+	background-color: white;
     padding: 12px 24px;
-    background-color: black;
-    color: white;
-    border-radius: 7px;
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
-    animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
-}
+    color: black;
+    border-radius: 6px;
+    border-bottom: 4px solid hsl(241, 3%, 73%);
+    border-top: 0px;
+    transition: all 0.1s ease-in-out;
 
-@keyframes pulse {
-    to {
-        box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
-    }
+	&:hover {
+		border-bottom-width: 0;
+		border-top-width: 4px;
+	}
 }
 `;
 
