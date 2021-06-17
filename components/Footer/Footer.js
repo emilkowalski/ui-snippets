@@ -11,10 +11,7 @@ const Footer = () => {
                 <Separator />
                 <LinkPreview url={"https://uiw.tf/"} />
                 <Paragraph>
-                    Built by{" "}
-                    <Link href="https://twitter.com/emilkowalski_" target="_blank">
-                        Emil
-                    </Link>{" "}
+                    Built by <LinkPreview url="https://emilkowal.ski/">Emil</LinkPreview>{" "}
                 </Paragraph>
             </Stack>
         </footer>

@@ -248,6 +248,11 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
 
+"@radix-ui/react-polymorphic@0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-polymorphic/-/react-polymorphic-0.0.12.tgz#bf4ae516669b68e059549538104d97322f7c876b"
+  integrity sha512-/GYNMicBnGzjD1d2fCAuzql1VeFrp8mqM3xfzT1kxhnV85TKdURO45jBfMgqo17XNXoNhWIAProUsCO4qFAAIg==
+
 "@radix-ui/react-popper@0.0.16":
   version "0.0.16"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-popper/-/react-popper-0.0.16.tgz#62cccb7d920dc89e076bbdc3421db8c84078f428"
@@ -274,6 +279,16 @@
     "@radix-ui/react-primitive" "0.0.13"
     "@radix-ui/react-use-layout-effect" "0.0.5"
 
+"@radix-ui/react-portal@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-portal/-/react-portal-0.0.14.tgz#31513d8777cf5e50a3a30ebc9deb34821e890e9e"
+  integrity sha512-Wi9arVwVenonjZIX6znCBYaasua03Tb+UtrBZShepJkLGtbGxDlzExijiGIaIRNetl46Oc2pw0F6Y6HffDnUww==
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@radix-ui/react-polymorphic" "0.0.12"
+    "@radix-ui/react-primitive" "0.0.14"
+    "@radix-ui/react-use-layout-effect" "0.0.5"
+
 "@radix-ui/react-presence@0.0.14":
   version "0.0.14"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-presence/-/react-presence-0.0.14.tgz#6a86058bbbf46234dd8840dacd620b3ac5797025"
@@ -289,6 +304,14 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@radix-ui/react-polymorphic" "0.0.11"
+
+"@radix-ui/react-primitive@0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-primitive/-/react-primitive-0.0.14.tgz#752a967cb05d4c5643634fe20274e7dc905d1cce"
+  integrity sha512-FYOWGCrxFpLdB534aWTwMK4Pjg8cxFb+745qWhPfI+cYi+aYUddJQD3ilRHHXxCBD72ve7/PufqeB7Y/QlKqgg==
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@radix-ui/react-polymorphic" "0.0.12"
 
 "@radix-ui/react-roving-focus@0.0.13":
   version "0.0.13"
