@@ -10,7 +10,6 @@ const Wrapper = styled("a", {
     color: "$black",
     borderRadius: 7,
     borderBottom: "4px solid hsl(241, 3%, 73%)",
-    borderTop: "0px solid rgba(249, 250, 251)",
     transition: "all 0.1s ease-in-out",
     cursor: "pointer",
 
@@ -21,17 +20,19 @@ const Wrapper = styled("a", {
 });
 
 const stitchesStyling = `
-const pulse = keyframes({
-    "100%": { boxShadow: "0 0 0 20px rgba(255, 255, 255, 0)" },
-});
-
-const ExampleWrapper = styled("a", {
-	padding: "12px 24px",
-    backgroundColor: "black",
-    color: "white",
+const exampleWrapper = styled("a", {
+    backgroundColor: "white",
+    padding: "12px 24px",
+    color: "black",
     borderRadius: 7,
-    boxShadow: "0 0 0 0 rgba(255, 255, 255, 0.1)",
-    animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1),
+    borderBottom: "4px solid hsl(241, 3%, 73%)",
+    transition: "all 0.1s ease-in-out",	
+    cursor: "pointer",
+
+    "&:hover": {
+        borderBottomWidth: 0,
+        borderTopWidth: 4,
+    },
 });`;
 
 const cssStyling = `

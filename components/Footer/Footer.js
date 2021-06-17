@@ -9,9 +9,8 @@ const Footer = () => {
         <footer>
             <Stack>
                 <Separator />
-                <LinkPreview url={"https://uiw.tf/"} />
                 <Paragraph>
-                    Built by <LinkPreview url="https://emilkowal.ski/">Emil</LinkPreview>{" "}
+				Built by <LinkPreview url="https://emilkowal.ski/">Emil</LinkPreview>{" "}
                 </Paragraph>
             </Stack>
         </footer>

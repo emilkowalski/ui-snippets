@@ -7,7 +7,9 @@ export default ({ children, stitchesStyling, cssStyling, scssStyling }) => {
     const copyToClipboard = async (styling) => {
         try {
             await navigator.clipboard.writeText(styling);
-            createToast("Copied styles to clipboard");
+            createToast("Copied styles to clipboard", {
+                delay: 3000,
+            });
         } catch {
             createToast("Failed to copy", {
                 timeout: 3000,

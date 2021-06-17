@@ -21,7 +21,6 @@ const LinkPreview = ({ url, children }) => {
         meta: false,
         embed: "screenshot.url",
         colorScheme: "dark",
-
     });
 
     const screenshot = `https://api.microlink.io/?${params}`;
@@ -31,7 +30,7 @@ const LinkPreview = ({ url, children }) => {
     }, []);
 
     return (
-        <HoverCard.Root openDelay={0} closeDelay={0}>
+        <HoverCard.Root openDelay={100} closeDelay={100}>
             {isMounted ? (
                 <Portal.Root>
                     <Hidden>
