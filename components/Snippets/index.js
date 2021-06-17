@@ -1,8 +1,8 @@
 import * as underlineLeftRight from "./underlineLeftRight";
 import * as pulse from "./pulse";
-import * as borderFade from "./borderFade";
 import * as pressDownButton from "./pressDownButton";
+import * as overlayLeft from "./overlayLeft";
 
-const allSnippets = [underlineLeftRight, pulse, borderFade, pressDownButton];
+const allSnippets = [underlineLeftRight, pulse, pressDownButton, overlayLeft];
 
 export default allSnippets;
