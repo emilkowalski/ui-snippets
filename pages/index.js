@@ -10,7 +10,7 @@ export default function Home() {
         <Container>
             <Stack>
                 <Heading>
-                    Right click on the animation <br></br> to copy the styling
+                    Right click the animation <br /> to copy the styling
                 </Heading>
                 <Seperator />
                 <Grid />
