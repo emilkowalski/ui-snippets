@@ -8,7 +8,7 @@ export const { styled, getCssString, global, keyframes } = createCss({
         colors: {
             black: "hsl(197, 8%, 8%)",
             white: "hsl(241, 3%, 93%)",
-            gray: "hsl(205, 5%, 53%)",
+            gray: "hsl(208, 7%, 37%)",
             darkGray: "hsl(197, 6%, 12%)",
             primary: "hsl(193, 95%, 45%)",
         },

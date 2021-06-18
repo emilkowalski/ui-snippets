@@ -1,5 +1,4 @@
-import { styled } from "stitches.config";
-import { keyframes } from "@stitches/react";
+import { styled, keyframes } from "stitches.config";
 import { createToast } from "vercel-toast";
 import * as ContextMenu from "@radix-ui/react-context-menu";
 
@@ -7,8 +6,9 @@ export default ({ children, stitchesStyling, cssStyling, scssStyling }) => {
     const copyToClipboard = async (styling) => {
         try {
             await navigator.clipboard.writeText(styling);
+
             createToast("Copied styles to clipboard", {
-                delay: 3000,
+                timeout: 3000,
             });
         } catch {
             createToast("Failed to copy", {
