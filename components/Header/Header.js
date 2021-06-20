@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <Wrapper as="header">
             <Logo href="/">UI Snippets</Logo>
-            <GithubLink href="https://github.com/">
+            <GithubLink href="https://github.com/emilkowalski/ui-snippets" target="_blank">
                 <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
                     <path
                         fillRule="evenodd"
