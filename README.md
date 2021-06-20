@@ -1,1 +1,1 @@
-![image](/public/static/thumbnail.jpg)
+![image](/public/thumbnail.jpg)
