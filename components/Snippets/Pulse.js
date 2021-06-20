@@ -23,7 +23,7 @@ const pulse = keyframes({
     "100%": { boxShadow: "0 0 0 20px rgba(255, 255, 255, 0)" },
 });
 
-const ExampleWrapper = styled("a", {
+const exampleWrapper = styled("a", {
 	padding: "12px 24px",
     backgroundColor: "black",
     color: "white",

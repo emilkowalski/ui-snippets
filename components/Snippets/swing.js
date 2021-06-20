@@ -23,7 +23,7 @@ const Wrapper = styled("a", {
 });
 
 const stitchesStyling = `
-const ExampleWrapper = styled("a", {
+const exampleWrapper = styled("a", {
 	color: "white",
 
     "&:hover": {

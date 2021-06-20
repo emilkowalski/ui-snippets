@@ -24,7 +24,7 @@ const loading = keyframes({
     "100%": { backgroundPosition: "-200% 0" },
 });
 
-const ExampleWrapper = styled("div", {
+const exampleWrapper = styled("div", {
 	width: 120,
     borderRadius: 6,
     height: 44,

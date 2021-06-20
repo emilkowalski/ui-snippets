@@ -29,7 +29,7 @@ const Wrapper = styled("a", {
 });
 
 const stitchesStyling = `
-const ExampleWrapper = styled("a", {
+const exampleWrapper = styled("a", {
     display: "inline-block",
     position: "relative",
 
