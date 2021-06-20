@@ -20,9 +20,16 @@ const Grid = ({ children }) => {
 
 const Wrapper = styled("div", {
     display: "grid",
-    gridTemplateColumns: "1fr 1fr 1fr 1fr",
     gap: "$4",
     padding: "$4 0",
+
+    "@bp2": {
+        gridTemplateColumns: "1fr 1fr",
+    },
+
+    "@bp3": {
+        gridTemplateColumns: "1fr 1fr 1fr 1fr",
+    },
 });
 
 export default Grid;

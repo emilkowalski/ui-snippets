@@ -21,8 +21,6 @@ const Header = () => {
 };
 
 const Wrapper = styled(Container, {
-    position: "sticky",
-    top: 0,
     height: 100,
     display: "flex",
     alignItems: "center",

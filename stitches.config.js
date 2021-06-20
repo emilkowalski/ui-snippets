@@ -30,4 +30,10 @@ export const { styled, getCssString, global, keyframes } = createCss({
             1: "7px",
         },
     },
+    media: {
+        bp1: "(min-width: 575px)",
+        bp2: "(min-width: 750px)",
+        bp3: "(min-width: 1000px)",
+        bp4: "(min-width: 1200px)",
+    },
 });
