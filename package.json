@@ -11,7 +11,7 @@
     "@radix-ui/react-context-menu": "^0.0.19",
     "@radix-ui/react-hover-card": "^0.0.2",
     "@radix-ui/react-portal": "^0.0.14",
-    "@stitches/react": "^0.2.0-canary.5",
+    "@stitches/react": "^0.2.2",
     "next": "10.2.3",
     "next-seo": "^4.26.0",
     "qss": "^2.0.3",

@@ -398,7 +398,7 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
 
-"@stitches/react@^0.2.0-canary.5":
+"@stitches/react@^0.2.2":
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@stitches/react/-/react-0.2.2.tgz#8a2f8256835510c265ab20820f54a5bb0376bac6"
   integrity sha512-/qRSX+ANPJg/0eLNr5bEywjkdvIfLbsaG2d8p83wPlI0MA7Yi9FzaRLk2H6DMAdJHuyu6ThY4HfHQIL35buY9g==

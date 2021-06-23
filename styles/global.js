@@ -2,8 +2,6 @@ import { global } from "stitches.config";
 
 export const globalStyles = global({
     body: {
-        opacity: 1,
-        visibility: "visible",
         backgroundColor: "$black",
         color: "$white",
         fontFamily: "$sans",
