@@ -3,10 +3,13 @@ import "vercel-toast/dist/vercel-toast.css";
 import Head from "next/head";
 import { NextSeo } from "next-seo";
 
+import { useAnalytics } from "@lib/analytics";
 import Header from "@components/Header";
 
 function MyApp({ Component, pageProps }) {
     globalStyles();
+    useAnalytics();
+
     return (
         <>
             <Head>
