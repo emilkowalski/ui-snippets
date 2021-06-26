@@ -24,12 +24,12 @@ function MyApp({ Component, pageProps }) {
             </Head>
             <NextSeo
                 title="UI Snippets"
-                description="A collection of CSS effects made with Next.js."
+                description="A collection of UI Snippets made with Next.js."
                 openGraph={{
                     type: "website",
                     url: "https://ui-snippets.dev",
                     title: "UI Snippets",
-                    description: "A collection of CSS effects made with Next.js.",
+                    description: "A collection of UI Snippets made with Next.js.",
                     images: [
                         {
                             url: "https://ui-snippets.dev/thumbnail.jpg",
