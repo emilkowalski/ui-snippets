@@ -38,7 +38,6 @@ const Wrapper = styled("a", {
 const stitchesStyling = `
 const exampleWrapper = styled("a", {
     position: "relative",
-    cursor: "pointer",
 
     span: {
         position: "relative",
@@ -65,52 +64,56 @@ const exampleWrapper = styled("a", {
 
 const cssStyling = `
 .exampleClass {
-    display: inline-block;
-    position: relative;
-    color: white;
+	position: relative;
   }
 
-  .exampleClass::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: white;
-    transform-origin: bottom right;
-    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-  }
+.exampleClass span {
+	position: relative;
+}
 
-  .exampleClass:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
+.exampleClass::before {
+	content: "";
+	position: absolute;
+	left: -0.1px;
+	right: -0.1px;
+	bottom: 0;
+	height: 100%;
+	transform: scaleY(.3);
+	transition: transform .6s cubic-bezier(0.53, 0.21, 0, 1);
+	transform-origin: bottom;
+	background-color: hsl(244, 63%, 69%);
+	opacity: 0.6;
+}
+
+.exampleClass:hover::before {
+	transform: scaleY(1);
+}
 `;
 
 const scssStyling = `
 .exampleClass {
-    display: inline-block;
-    position: relative;
-    color: white;
+	position: relative;
 
-	&:after {
-		content: '';
+	span {
+		position: relative;
+	}
+
+	&:before {
+		content: "";
 		position: absolute;
-		width: 100%;
-		transform: scaleX(0);
-		height: 2px;
+		left: -0.1px;
+		right: -0.1px;
 		bottom: 0;
-		left: 0;
-		background-color: white;
-		transform-origin: bottom right;
-		transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-	  }
+		height: 100%;
+		transform: scaleY(.3);
+		transition: transform .6s cubic-bezier(0.53, 0.21, 0, 1);
+		transform-origin: bottom;
+		background-color: hsl(244, 63%, 69%);
+		opacity: 0.6;
+	}
 
-	&:hover::after {
-		transform: scaleX(1);
-		transform-origin: bottom left;
+	&:hover:before {
+		transform: scaleY(1);
 	}
   }
 `;
