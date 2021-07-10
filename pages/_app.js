@@ -1,7 +1,7 @@
 import { globalStyles } from 'styles/global';
 import 'vercel-toast/dist/vercel-toast.css';
 
-import { useAnalytics } from 'lib/analytics';
+import { useAnalytics } from 'hooks/analytics';
 import Header from 'components/Header';
 import Head from 'components/Head';
 

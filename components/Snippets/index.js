@@ -1,29 +1,29 @@
-import * as underlineLeftRight from './underlineLeftRight';
-import * as pulse from './pulse';
-import * as pressDownButton from './pressDownButton';
-import * as borderMarker from './borderMarker';
-import * as overlayLeft from './overlayLeft';
-import * as magnifyButton from './magnifyButton';
-import * as swing from './swing';
-import * as skeleton from './skeleton';
-import * as horizontalOverlay from './horizontalOverlay';
-import * as borderFade from './borderFade';
-import * as textTransformX from './textTransformX';
-import * as circleScaleButton from './circleScaleButton';
+import * as UnderlineLeftRight from './UnderlineLeftRight';
+import * as Pulse from './Pulse';
+import * as PressDownButton from './PressDownButton';
+import * as BorderMarker from './BorderMarker';
+import * as OverlayLeft from './OverlayLeft';
+import * as MagnifyButton from './MagnifyButton';
+import * as Swing from './Swing';
+import * as Skeleton from './Skeleton';
+import * as HorizontalOverlay from './HorizontalOverlay';
+import * as BorderFade from './BorderFade';
+import * as TextTransformX from './TextTransformX';
+import * as CircleScaleButton from './CircleScaleButton';
 
 const allSnippets = [
-  underlineLeftRight,
-  pulse,
-  pressDownButton,
-  borderMarker,
-  overlayLeft,
-  magnifyButton,
-  swing,
-  skeleton,
-  horizontalOverlay,
-  borderFade,
-  textTransformX,
-  circleScaleButton
+  UnderlineLeftRight,
+  Pulse,
+  PressDownButton,
+  BorderMarker,
+  OverlayLeft,
+  MagnifyButton,
+  Swing,
+  Skeleton,
+  HorizontalOverlay,
+  BorderFade,
+  TextTransformX,
+  CircleScaleButton
 ];
 
 export default allSnippets;
