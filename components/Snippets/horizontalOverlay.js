@@ -1,50 +1,50 @@
-import { styled } from "stitches.config.js";
+import { styled } from 'stitches.config.js';
 
 const Component = () => {
-    return (
-        <Wrapper>
-            <span>Hover me</span>
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <span>Hover me</span>
+    </Wrapper>
+  );
 };
 
-const Wrapper = styled("a", {
-    overflow: "hidden",
-    padding: "12px 24px",
-    borderRadius: "$1",
-    backgroundColor: "$white",
-    color: "$black",
-    position: "relative",
-    display: "inline-block",
-    cursor: "pointer",
+const Wrapper = styled('a', {
+  overflow: 'hidden',
+  padding: '12px 24px',
+  borderRadius: '$1',
+  backgroundColor: '$white',
+  color: '$black',
+  position: 'relative',
+  display: 'inline-block',
+  cursor: 'pointer',
 
-    span: {
-        position: "relative",
-        transition: "color 0.6s cubic-bezier(0.53, 0.21, 0, 1)",
-    },
+  span: {
+    position: 'relative',
+    transition: 'color 0.6s cubic-bezier(0.53, 0.21, 0, 1)'
+  },
 
-    "&:before": {
-        content: "",
-        display: "block",
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        background: "hsl(244, 63%, 69%)",
-        transform: "scaleX(0)",
-        transformOrigin: "100% 100%",
-        transition: "transform 0.6s cubic-bezier(0.53, 0.21, 0, 1)",
-    },
+  '&:before': {
+    content: '',
+    display: 'block',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    background: 'hsl(244, 63%, 69%)',
+    transform: 'scaleX(0)',
+    transformOrigin: '100% 100%',
+    transition: 'transform 0.6s cubic-bezier(0.53, 0.21, 0, 1)'
+  },
 
-    "&:hover::before": {
-        transformOrigin: " 0 0",
-        transform: "scaleX(1)",
-    },
+  '&:hover::before': {
+    transformOrigin: ' 0 0',
+    transform: 'scaleX(1)'
+  },
 
-    "&:hover span": {
-        color: "$white",
-    },
+  '&:hover span': {
+    color: '$white'
+  }
 });
 
 const stitchesStyling = `

@@ -1,51 +1,51 @@
-import { styled } from "stitches.config.js";
+import { styled } from 'stitches.config.js';
 
 const Component = () => {
-    return (
-        <Wrapper>
-            <span>Hover me</span>
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <span>Hover me</span>
+    </Wrapper>
+  );
 };
 
-const Wrapper = styled("a", {
-    padding: "12px 24px",
-    backgroundColor: "$white",
-    color: "$black",
-    position: "relative",
-    borderRadius: "$1",
-    overflow: "hidden",
-    cursor: "pointer",
+const Wrapper = styled('a', {
+  padding: '12px 24px',
+  backgroundColor: '$white',
+  color: '$black',
+  position: 'relative',
+  borderRadius: '$1',
+  overflow: 'hidden',
+  cursor: 'pointer',
+
+  span: {
+    position: 'relative'
+  },
+
+  '&:before': {
+    content: '',
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    width: '140px',
+    height: '140px',
+    borderRadius: '50%',
+    transform: 'translate3d(-50%,-50%,0) scale3d(0,0,0)',
+    transition: 'opacity .4s cubic-bezier(.19,1,.22,1),transform .75s cubic-bezier(.19,1,.22,1)',
+    backgroundColor: 'hsl(244, 63%, 69%)',
+    opacity: 0
+  },
+
+  '&:hover': {
+    '&:before': {
+      opacity: 1,
+      transitionDuration: '.85s',
+      transform: 'translate3d(-50%,-50%,0) scale3d(1,1,1)'
+    },
 
     span: {
-        position: "relative",
-    },
-
-    "&:before": {
-        content: "",
-        position: "absolute",
-        top: "50%",
-        left: "50%",
-        width: "140px",
-        height: "140px",
-        borderRadius: "50%",
-        transform: "translate3d(-50%,-50%,0) scale3d(0,0,0)",
-        transition: "opacity .4s cubic-bezier(.19,1,.22,1),transform .75s cubic-bezier(.19,1,.22,1)",
-        backgroundColor: "hsl(244, 63%, 69%)",
-        opacity: 0,
-    },
-
-    "&:hover": {
-        "&:before": {
-            opacity: 1,
-            transitionDuration: ".85s",
-            transform: "translate3d(-50%,-50%,0) scale3d(1,1,1)",
-        },
-
-        span: {
-            color: "$white",
-        },
-    },
+      color: '$white'
+    }
+  }
 });
 
 const stitchesStyling = `

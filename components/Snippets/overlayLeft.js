@@ -1,49 +1,49 @@
-import { styled } from "stitches.config.js";
+import { styled } from 'stitches.config.js';
 
 const Component = () => {
-    return (
-        <Wrapper>
-            <span>Hover me</span>
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <span>Hover me</span>
+    </Wrapper>
+  );
 };
 
-const Wrapper = styled("a", {
-    padding: "12px 24px",
-    backgroundColor: "$white",
-    borderRadius: "$1",
-    position: "relative",
-    overflow: "hidden",
-    cursor: "pointer",
+const Wrapper = styled('a', {
+  padding: '12px 24px',
+  backgroundColor: '$white',
+  borderRadius: '$1',
+  position: 'relative',
+  overflow: 'hidden',
+  cursor: 'pointer',
+
+  span: {
+    color: '$black',
+    position: 'relative',
+    transition: 'color 0.6s cubic-bezier(0.53, 0.21, 0, 1)'
+  },
+
+  '&:before': {
+    content: '',
+    position: 'absolute',
+    top: '50%',
+    left: 0,
+    borderRadius: '$1',
+    transform: 'translate(-100%, -50%)',
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'hsl(244, 63%, 69%)',
+    transition: 'transform 0.6s cubic-bezier(0.53, 0.21, 0, 1)'
+  },
+
+  '&:hover': {
+    '&:before': {
+      transform: 'translate(0, -50%) scale(1.001)'
+    },
 
     span: {
-        color: "$black",
-        position: "relative",
-        transition: "color 0.6s cubic-bezier(0.53, 0.21, 0, 1)",
-    },
-
-    "&:before": {
-        content: "",
-        position: "absolute",
-        top: "50%",
-        left: 0,
-        borderRadius: "$1",
-        transform: "translate(-100%, -50%)",
-        width: "100%",
-        height: "100%",
-        backgroundColor: "hsl(244, 63%, 69%)",
-        transition: "transform 0.6s cubic-bezier(0.53, 0.21, 0, 1)",
-    },
-
-    "&:hover": {
-        "&:before": {
-            transform: "translate(0, -50%) scale(1.001)",
-        },
-
-        span: {
-            color: "$white",
-        },
-    },
+      color: '$white'
+    }
+  }
 });
 
 const stitchesStyling = `

@@ -1,18 +1,18 @@
-import { styled } from "stitches.config.js";
+import { styled } from 'stitches.config.js';
 
 const Component = () => {
-    return <Wrapper>Hover me</Wrapper>;
+  return <Wrapper>Hover me</Wrapper>;
 };
 
-const Wrapper = styled("a", {
-    color: "$white",
-    transition: "transform 0.2s ease, color 0.2s ease",
-    cursor: "pointer",
+const Wrapper = styled('a', {
+  color: '$white',
+  transition: 'transform 0.2s ease, color 0.2s ease',
+  cursor: 'pointer',
 
-    "&:hover": {
-        transform: "translateX(4px)",
-        color: "hsl(244, 63%, 69%)",
-    },
+  '&:hover': {
+    transform: 'translateX(4px)',
+    color: 'hsl(244, 63%, 69%)'
+  }
 });
 
 const stitchesStyling = `

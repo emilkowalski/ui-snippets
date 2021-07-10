@@ -1,9 +1,9 @@
-import { styled } from "stitches.config.js";
+import { styled } from 'stitches.config.js';
 
-const Stack = styled("div", {
-    "> * + *": {
-        marginTop: "$5",
-    },
+const Stack = styled('div', {
+  '> * + *': {
+    marginTop: '$5'
+  }
 });
 
 export default Stack;
