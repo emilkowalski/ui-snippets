@@ -1,12 +1,16 @@
-import React from 'react';
-import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+
 import { getCssString } from 'stitches.config';
 
-export default class Document extends NextDocument {
+class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html>
         <Head>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=optional"
+            rel="stylesheet"
+          />
           <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssString() }} />
         </Head>
         <body>
@@ -17,3 +21,5 @@ export default class Document extends NextDocument {
     );
   }
 }
+
+export default MyDocument;
