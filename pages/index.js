@@ -1,5 +1,5 @@
 import Container from 'components/Container';
-import Grid from 'components/Grid';
+import SnippetsGrid from 'components/SnippetsGrid';
 import Heading from 'components/Heading';
 import Separator from 'components/Separator';
 import Stack from 'components/Stack';
@@ -13,7 +13,7 @@ export default function Home() {
           Right click the animation <br /> to copy the styling
         </Heading>
         <Separator />
-        <Grid />
+        <SnippetsGrid />
         <Footer />
       </Stack>
     </Container>
