@@ -3,7 +3,7 @@ import { createCss } from "@stitches/react";
 export const { styled, getCssString, global, keyframes } = createCss({
     theme: {
         fonts: {
-            sans: "Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
+            sans: "Inter, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif",
         },
         colors: {
             black: "hsl(197, 8%, 8%)",

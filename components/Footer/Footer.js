@@ -1,8 +1,8 @@
 import React from 'react';
 import { styled } from 'stitches.config';
-import Separator from '@components/Separator';
-import Stack from '@components/Stack';
-import LinkPreview from '@components/LinkPreview';
+import Separator from 'components/Separator';
+import Stack from 'components/Stack';
+import LinkPreview from 'components/LinkPreview';
 
 const Footer = () => {
   return (

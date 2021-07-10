@@ -13,7 +13,7 @@ const Wrapper = styled("a", {
     cursor: "pointer",
 
     span: {
-        position: "relative",
+        position: "relative", 
     },
 
     "&:before": {

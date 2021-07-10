@@ -1,8 +1,8 @@
 import { styled } from "stitches.config";
 
-import snippets from "@components/Snippets";
+import snippets from "components/Snippets";
 import GridItem from "./components/GridItem";
-import ContextMenu from "@components/ContextMenu";
+import ContextMenu from "components/ContextMenu";
 
 const Grid = ({ children }) => {
     return (
