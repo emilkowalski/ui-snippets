@@ -1,10 +1,10 @@
 import { styled } from 'stitches.config';
 
 import snippets from 'components/Snippets';
-import GridItem from './components/GridItem';
 import ContextMenu from 'components/ContextMenu';
+import SnippetsGridItem from './SnippetsGridItem';
 
-const Grid = ({ children }) => {
+const SnippetsGrid = ({ children }) => {
   return (
     <Wrapper>
       {snippets.map(({ Component, cssStyling, scssStyling, stitchesStyling }) => (
@@ -13,9 +13,9 @@ const Grid = ({ children }) => {
           scssStyling={scssStyling}
           stitchesStyling={stitchesStyling}
           key={stitchesStyling}>
-          <GridItem>
+          <SnippetsGridItem>
             <Component />
-          </GridItem>
+          </SnippetsGridItem>
         </ContextMenu>
       ))}
     </Wrapper>
@@ -36,4 +36,4 @@ const Wrapper = styled('div', {
   }
 });
 
-export default Grid;
+export default SnippetsGrid;

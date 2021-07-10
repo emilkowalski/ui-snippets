@@ -1,6 +1,6 @@
 import { styled } from 'stitches.config';
 
-const GridItem = ({ children, stitchesStyling }) => {
+const SnippetsGridItem = ({ children }) => {
   return <Wrapper>{children}</Wrapper>;
 };
 
@@ -13,4 +13,4 @@ const Wrapper = styled('div', {
   alignItems: 'center'
 });
 
-export default GridItem;
+export default SnippetsGridItem;

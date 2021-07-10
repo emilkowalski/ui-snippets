@@ -10,10 +10,12 @@ import { styled } from 'stitches.config';
 const LinkPreview = ({ url, children }) => {
   const [isMounted, setIsMounted] = useState(false);
 
-  const width = 200;
-  const height = 128;
-  const quality = 50;
-  const layout = 'fixed';
+  const previewImage = {
+    width: 200,
+    height: 128,
+    quality: 50,
+    layout: 'fixed'
+  };
 
   const params = encode({
     url,
@@ -37,9 +39,9 @@ const LinkPreview = ({ url, children }) => {
             <Image
               alt={`Screenshot of ${url}`}
               src={screenshot}
-              width={width}
-              height={height}
-              layout={layout}
+              width={previewImage.width}
+              height={previewImage.height}
+              layout={previewImage.layout}
               priority={true}
             />
           </Hidden>
@@ -49,7 +51,14 @@ const LinkPreview = ({ url, children }) => {
         {children}
       </HoverCardTrigger>
       <HoverCardContent side="top" sideOffset={5}>
-        <StyledImage width={width} height={height} layout="fixed" quality={50} src={screenshot} />
+        <StyledImage
+          alt={`Screenshot of ${url}`}
+          src={screenshot}
+          width={previewImage.width}
+          height={previewImage.height}
+          layout={previewImage.layout}
+          priority={true}
+        />
       </HoverCardContent>
     </HoverCard.Root>
   );
