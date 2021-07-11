@@ -81,4 +81,44 @@ const exampleWrapper = styled('div', {
   }
 });`;
 
-export { stitchesStyling, Component };
+const cssStyling = `
+.exampleClass {
+	position: relative;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: white;
+  color: white;
+  animation: flashing 0.8s infinite linear alternate .4s;
+}
+
+.exampleClass::after,
+.exampleClass::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: white;
+  color: white;
+}
+
+.exampleClass::before {
+  left: -21px;
+  animation: flashing 0.8s infinite alternate;
+}
+
+.exampleClass::after {
+  left: 21px;
+  animation: flashing 0.8s infinite alternate .8s;
+}
+
+@keyframes flashing {
+  0% { background-color: white }
+  50%, 100% { background-color: rgba(255, 255, 255, 0.3) }
+}
+`;
+
+export { stitchesStyling, cssStyling, Component };
