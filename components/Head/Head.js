@@ -1,6 +1,6 @@
 import NextHead from 'next/head';
 
-import ogImage from 'public/thumbnail.jpg';
+const ogImage = 'https://ui-snippets.dev/thumbnail.jpg';
 
 const Head = ({
   title = 'UI Snippets',
