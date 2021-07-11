@@ -67,7 +67,7 @@ const exampleButton = styled('button', {
     '&::before': {
       content: '',
       position: 'absolute',
-      borderRadius: '$1',
+      borderRadius: '7px',
       top: 0,
       left: 0,
       width: '100%',
@@ -88,4 +88,46 @@ const exampleButton = styled('button', {
   });
 `;
 
-export { stitchesStyling, Component };
+const cssStyling = `
+  .exampleClass {
+    cursor: pointer;
+    border: none;
+    position: relative;
+    padding: 12px 24px;
+    font-size: inherit;
+    background: none;
+    font-family: inherit;
+  }
+
+  .exampleClass span {
+    display: block;
+    mix-blend-mode: difference;
+    transition: transform .4s cubic-bezier(0.2, 1, 0.8, 1);
+    color: darkgray;
+  }
+
+  .exampleClass::before {
+    content: '';
+    position: absolute;
+    border-radius: 7px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+    transition: clip-path 0.4s cubic-bezier(0.2, 1, 0.8, 1);
+    z-index: 0;
+  }
+
+  .exampleClass:hover::before {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  }
+
+  .exampleClass:hover span {
+    transform: translate3d(-10px,0,0);
+  }
+
+`;
+
+export { stitchesStyling, cssStyling, Component };
