@@ -10,6 +10,7 @@ import * as HorizontalOverlay from './HorizontalOverlay';
 import * as BorderFade from './BorderFade';
 import * as TextTransformX from './TextTransformX';
 import * as CircleScaleButton from './CircleScaleButton';
+import * as SkollButton from './SkollButton';
 
 const allSnippets = [
   UnderlineLeftRight,
@@ -23,7 +24,8 @@ const allSnippets = [
   HorizontalOverlay,
   BorderFade,
   TextTransformX,
-  CircleScaleButton
+  CircleScaleButton,
+  SkollButton
 ];
 
 export default allSnippets;
