@@ -64,4 +64,24 @@ const dotPulse = keyframes({
   });
 `;
 
-export { stitchesStyling, Component };
+const cssStyling = `
+.exampleClass span {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    animation: dotPulse 1s infinite linear;
+    margin: 0 4px;
+    display: inline-block;
+  }
+  
+  .exampleClass span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .exampleClass span:nth-child(3) {
+    animation-delay: 0.3s;
+  }  
+`;
+
+export { stitchesStyling, cssStyling, Component };
