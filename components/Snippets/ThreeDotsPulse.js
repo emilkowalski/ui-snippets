@@ -84,4 +84,25 @@ const cssStyling = `
   }  
 `;
 
-export { stitchesStyling, cssStyling, Component };
+const scssStyling = `
+.exampleClass {
+    span {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: white;
+      animation: dotPulse 1s infinite linear;
+      margin: 0 4px;
+      display: inline-block;
+  
+      &:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      &:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+    }
+  }  
+`;
+
+export { stitchesStyling, cssStyling, scssStyling, Component };
