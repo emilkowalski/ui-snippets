@@ -76,42 +76,34 @@ const exampleWrapper = styled('div', {
 });`;
 
 const cssStyling = `
-.exampleClass {
-	position: relative;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: white;
-  color: white;
-  animation: flashing 0.8s infinite linear alternate .4s;
+.exampleClass span {
+	width: 14px;
+    height: 14px;
+    borderRadius: 50%;
+    backgroundColor: white;
+    animation: flashing 1.4s infinite linear;
+    margin: 0 4px;
+    display: inline-block;
 }
 
-.exampleClass::after,
-.exampleClass::before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: white;
-  color: white;
+.exampleClass span:nth-child(2) {
+  animation-delay: .2s;
 }
 
-.exampleClass::before {
-  left: -21px;
-  animation: flashing 0.8s infinite alternate;
-}
-
-.exampleClass::after {
-  left: 21px;
-  animation: flashing 0.8s infinite alternate .8s;
+.exampleClass span:nth-child(3) {
+  animation-delay: .4s;
 }
 
 @keyframes flashing {
-  0% { background-color: white }
-  50%, 100% { background-color: rgba(255, 255, 255, 0.3) }
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  },
+  100% {
+    opacity: 0.2;
+  }
 }
 `;
 
