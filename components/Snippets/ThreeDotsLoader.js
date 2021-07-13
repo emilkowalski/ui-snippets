@@ -1,44 +1,44 @@
 import { styled, keyframes } from 'stitches.config.js';
 
 const Component = () => {
-  return <Wrapper />;
+  return (
+    <Wrapper>
+      <span></span>
+      <span></span>
+      <span></span>
+    </Wrapper>
+  );
 };
 
 const flashing = keyframes({
-  '0%': { backgroundColor: '$white' },
-  '50%, 100%': {
-    backgroundColor: 'rgba(255, 255, 255, 0.3)'
+  '0%': {
+    opacity: 0.2
+  },
+  '20%': {
+    opacity: 1
+  },
+  '100%': {
+    opacity: 0.2
   }
 });
 
 const Wrapper = styled('div', {
-  position: 'relative',
-  width: '14px',
-  height: '14px',
-  borderRadius: '50%',
-  backgroundColor: '$white',
-  color: '$white',
-  animation: `${flashing} 0.8s infinite linear alternate .4s`,
-
-  '&::after, &::before': {
-    content: '',
-    display: 'inline-block',
-    position: 'absolute',
-    top: 0,
+  span: {
     width: '14px',
     height: '14px',
     borderRadius: '50%',
     backgroundColor: '$white',
-    color: '$white'
-  },
-  '&::before': {
-    left: '-21px',
-    animation: `${flashing} 0.8s infinite alternate`
+    animation: `${flashing} 1.4s infinite linear`,
+    margin: '0 4px',
+    display: 'inline-block'
   },
 
-  '&::after': {
-    left: '21px',
-    animation: `${flashing} 0.8s infinite alternate .8s`
+  'span:nth-child(2)': {
+    'animation-delay': '.2s'
+  },
+
+  'span:nth-child(3)': {
+    'animation-delay': '.4s'
   }
 });
 
