@@ -24,21 +24,21 @@ const flashing = keyframes({
 
 const Wrapper = styled('div', {
   span: {
-    width: '14px',
-    height: '14px',
+    width: '8px',
+    height: '8px',
     borderRadius: '50%',
     backgroundColor: '$white',
     animation: `${flashing} 1.4s infinite linear`,
     margin: '0 4px',
-    display: 'inline-block'
-  },
+    display: 'inline-block',
 
-  'span:nth-child(2)': {
-    'animation-delay': '.2s'
-  },
+    '&:nth-child(2)': {
+      'animation-delay': '.2s'
+    },
 
-  'span:nth-child(3)': {
-    'animation-delay': '.4s'
+    '&:nth-child(3)': {
+      'animation-delay': '.4s'
+    }
   }
 });
 
@@ -57,28 +57,28 @@ const flashing = keyframes({
 
 const exampleWrapper = styled('div', {
   span: {
-    width: '14px',
-    height: '14px',
+    width: '8px',
+    height: '8px',
     borderRadius: '50%',
-    backgroundColor: '$white',
+    backgroundColor: 'white',
     animation: 'flashing 1.4s infinite linear',
     margin: '0 4px',
     display: 'inline-block'
   },
 
-  'span:nth-child(2)': {
+  '&:nth-child(2)': {
     'animation-delay': '.2s'
   },
 
-  'span:nth-child(3)': {
+  '&:nth-child(3)': {
     'animation-delay': '.4s'
   }
 });`;
 
 const cssStyling = `
 .exampleClass span {
-  width: 14px;
-  height: 14px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-color: white;
   animation: flashing 1.4s infinite linear;
@@ -110,8 +110,8 @@ const cssStyling = `
 const scssStyling = `
 .exampleClass {
   span {
-    width: 14px;
-    height: 14px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background-color: white;
     animation: flashing 1.4s infinite linear;
@@ -126,8 +126,9 @@ const scssStyling = `
       animation-delay: 0.4s;
     }
   }
+}
 
-  @keyframes flashing {
+@keyframes flashing {
     0% {
       opacity: 0.2;
     }
@@ -138,7 +139,6 @@ const scssStyling = `
       opacity: 0.2;
     }
   }
-}
 `;
 
 export { stitchesStyling, cssStyling, scssStyling, Component };
