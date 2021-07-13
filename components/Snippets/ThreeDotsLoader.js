@@ -77,21 +77,21 @@ const exampleWrapper = styled('div', {
 
 const cssStyling = `
 .exampleClass span {
-	width: 14px;
-    height: 14px;
-    borderRadius: 50%;
-    backgroundColor: white;
-    animation: flashing 1.4s infinite linear;
-    margin: 0 4px;
-    display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: white;
+  animation: flashing 1.4s infinite linear;
+  margin: 0 4px;
+  display: inline-block;
 }
 
 .exampleClass span:nth-child(2) {
-  animation-delay: .2s;
+  animation-delay: 0.2s;
 }
 
 .exampleClass span:nth-child(3) {
-  animation-delay: .4s;
+  animation-delay: 0.4s;
 }
 
 @keyframes flashing {
@@ -100,7 +100,7 @@ const cssStyling = `
   }
   20% {
     opacity: 1;
-  },
+  }
   100% {
     opacity: 0.2;
   }
@@ -109,45 +109,34 @@ const cssStyling = `
 
 const scssStyling = `
 .exampleClass {
-  position: relative;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: white;
-  color: white;
-  animation: flashing 0.8s infinite linear alternate 0.4s;
-
-  &::before,
-  &::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 0;
+  span {
     width: 14px;
     height: 14px;
     border-radius: 50%;
     background-color: white;
-    color: white;
+    animation: flashing 1.4s infinite linear;
+    margin: 0 4px;
+    display: inline-block;
+
+    &:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 0.4s;
+    }
   }
 
-  &::before {
-    left: -21px;
-    animation: flashing 0.8s infinite alternate;
-  }
-
-  &::after {
-    left: 21px;
-    animation: flashing 0.8s infinite alternate 0.8s;
-  }
-}
-
-@keyframes flashing {
-  0% {
-    background-color: white;
-  }
-  50%,
-  100% {
-    background-color: rgba(255, 255, 255, 0.3);
+  @keyframes flashing {
+    0% {
+      opacity: 0.2;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.2;
+    }
   }
 }
 `;
