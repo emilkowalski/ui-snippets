@@ -73,4 +73,37 @@ const exampleWrapper = styled('span', {
   });  
 `;
 
-export { stitchesStyling, Component };
+const cssStyling = `
+.exampleClass {
+    display: inline-block;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    padding: 1.5px;
+  }
+  
+  .exampleClass svg {
+    width: 76px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 7px) translateZ(0);
+    fill: none;
+    stroke: #bbc1e1;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke-dasharray: 69px 278px;
+    stroke-dashoffset: 361px;
+    transition: stroke 0.25s ease 0s, stroke-dasharray 0.35s;
+  }
+  
+  .exampleClass:hover svg {
+    stroke: hsl(244, 63%, 69%);
+    stroke-dasharray: 180px 278px;
+    transition: stroke 0.25s ease 0.1s, stroke-dasharray 0.35s;
+  }
+  
+`;
+
+export { stitchesStyling, cssStyling, Component };
