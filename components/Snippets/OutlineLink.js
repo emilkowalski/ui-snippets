@@ -41,4 +41,36 @@ const Wrapper = styled('span', {
   }
 });
 
-export { Component };
+const stitchesStyling = `
+const exampleWrapper = styled('span', {
+    display: 'inline-block',
+    position: 'relative',
+    color: '$white',
+    cursor: 'pointer',
+    padding: '1.5px',
+  
+    svg: {
+      width: '76px',
+      height: '40px',
+      position: 'absolute',
+      left: '50%',
+      bottom: 0,
+      transform: 'translate(-50%, 7px) translateZ(0)',
+      fill: 'none',
+      stroke: '#BBC1E1',
+      'stroke-linecap': 'round',
+      'stroke-width': '2px',
+      'stroke-dasharray': '69px 278px',
+      'stroke-dashoffset': '361px',
+      transition: 'stroke .25s ease 0s, stroke-dasharray .35s'
+    },
+  
+    '&:hover svg': {
+      stroke: 'hsl(244, 63%, 69%)',
+      'stroke-dasharray': '180px 278px',
+      transition: 'stroke .25s ease .1s, stroke-dasharray .35s'
+    }
+  });  
+`;
+
+export { stitchesStyling, Component };
