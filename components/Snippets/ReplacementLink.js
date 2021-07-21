@@ -70,4 +70,37 @@ const exampleWrapper = styled('div', {
   });
 `;
 
-export { stitchesStyling, Component };
+const cssStyling = `
+.exampleClass {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .exampleClass span {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.5, 0.5, 0.3, 1);
+  }
+  
+  .exampleClass::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    content: attr(data-text);
+    transform-origin: 100% 50%;
+    transform: translate3d(150%, 0, 0);
+    transition: transform 0.3s cubic-bezier(0.5, 0.5, 0.3, 1);
+  }
+  
+  .exampleClass:hover::before {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .exampleClass:hover span {
+    transform: translate3d(-150%, 0, 0);
+  }
+  `;
+
+export { stitchesStyling, cssStyling, Component };
