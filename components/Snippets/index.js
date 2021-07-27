@@ -11,6 +11,7 @@ import * as BorderFade from './BorderFade';
 import * as TextTransformX from './TextTransformX';
 import * as CircleScaleButton from './CircleScaleButton';
 import * as ThreeDotsLoader from './ThreeDotsLoader';
+import * as ButtonWithFlowingArrow from './ButtonWithFlowingArrow';
 
 const allSnippets = [
   UnderlineLeftRight,
@@ -25,7 +26,8 @@ const allSnippets = [
   BorderFade,
   TextTransformX,
   CircleScaleButton,
-  ThreeDotsLoader
+  ThreeDotsLoader,
+  ButtonWithFlowingArrow
 ];
 
 export default allSnippets;
