@@ -13,18 +13,18 @@ const Wrapper = styled('a', {
     content: '',
     position: 'absolute',
     width: '100%',
-    transform: 'scaleX(0)',
+    transform: 'scaleX(1)',
     height: 1,
-    top: '110%',
+    bottom: 0,
     left: 0,
     backgroundColor: '$white',
-    transformOrigin: 'bottom right',
-    transition: 'transform .4s cubic-bezier(.86,0,.07,1)'
+    transformOrigin: 'bottom left',
+    transition: 'transform .4s cubic-bezier(.77,0,.175,1)'
   },
 
   '&:hover::after': {
-    transform: 'scaleX(1)',
-    transformOrigin: 'bottom left'
+    transform: 'scaleX(0)',
+    transformOrigin: 'bottom right'
   }
 });
 

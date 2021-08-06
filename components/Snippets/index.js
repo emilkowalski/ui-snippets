@@ -12,6 +12,7 @@ import * as TextTransformX from './TextTransformX';
 import * as CircleScaleButton from './CircleScaleButton';
 import * as ThreeDotsLoader from './ThreeDotsLoader';
 import * as ScalePseudo from './ScalePseudo';
+import * as UnderlineRight from './UnderlineRight';
 
 const allSnippets = [
   UnderlineLeftRight,
@@ -27,7 +28,8 @@ const allSnippets = [
   TextTransformX,
   CircleScaleButton,
   ThreeDotsLoader,
-  ScalePseudo
+  ScalePseudo,
+  UnderlineLeftRight
 ];
 
 export default allSnippets;
