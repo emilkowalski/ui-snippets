@@ -1,7 +1,7 @@
 import { styled } from 'stitches.config.js';
 
 const Component = () => {
-  return <Wrapper>Hover me</Wrapper>;
+  return <Wrapper>Hover over me</Wrapper>;
 };
 
 const Wrapper = styled('a', {

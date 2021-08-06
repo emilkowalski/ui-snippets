@@ -3,7 +3,7 @@ import { styled } from 'stitches.config.js';
 const Component = () => {
   return (
     <Wrapper>
-      <span>Hover me</span>
+      <span>Hover over me</span>
     </Wrapper>
   );
 };
@@ -39,7 +39,7 @@ const Wrapper = styled('a', {
     '&:before': {
       opacity: 1,
       transitionDuration: '.85s',
-      transform: 'translate3d(-50%,-50%,0) scale3d(1,1,1)'
+      transform: 'translate3d(-50%,-50%,0) scale3d(1.2,1.2,1.2)'
     },
 
     span: {
@@ -79,7 +79,7 @@ const exampleWrapper = styled("a", {
         "&:before": {
             opacity: 1,
             transitionDuration: ".85s",
-            transform: "translate3d(-50%,-50%,0) scale3d(1,1,1)",
+            transform: "translate3d(-50%,-50%,0) scale3d(1.2,1.2,1.2)",
         },
 
         span: {
@@ -125,7 +125,7 @@ const cssStyling = `
 .exampleBtn:hover::before {
     opacity: 1;
     transition-duration: .85s;
-    transform: translate3d(-50%,-50%,0) scale3d(1,1,1)
+    transform: translate3d(-50%,-50%,0) scale3d(1.2,1.2,1.2);
 }
 `;
 
@@ -166,7 +166,7 @@ const scssStyling = `
 		&:before {
 			opacity: 1;
 			transition-duration: .85s;
-			transform: translate3d(-50%,-50%,0) scale3d(1,1,1)
+			transform: translate3d(-50%,-50%,0) scale3d(1.2,1.2,1.2);
 		}
 	}
 }
