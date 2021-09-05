@@ -39,7 +39,7 @@ const cssStyling = `
 
 .exampleClass:hover {
 	animation: swing 1s ease;
-	nimation-iteration-count: 1;
+	animation-iteration-count: 1;
 }
 `;
 
@@ -49,9 +49,9 @@ const scssStyling = `
 
 	&:hover {
 		animation: swing 1s ease;
-		nimation-iteration-count: 1;
+		animation-iteration-count: 1;
 	}
-  }
+ }
 `;
 
 export { stitchesStyling, cssStyling, scssStyling, Component };
