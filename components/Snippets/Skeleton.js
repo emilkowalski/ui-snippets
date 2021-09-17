@@ -19,21 +19,6 @@ const Wrapper = styled('div', {
   animation: `${loading} 8s ease-in-out infinite`
 });
 
-const stitchesStyling = `
-const loading = keyframes({
-    "0%": { backgroundPosition: "200% 0" },
-    "100%": { backgroundPosition: "-200% 0" },
-});
-
-const exampleWrapper = styled("div", {
-	width: 120,
-    borderRadius: 6,
-    height: 44,
-    backgroundImage: "linear-gradient(270deg, hsl(109, 0%, 12%), hsl(109, 0%, 20%), hsl(109, 0%, 20%), hsl(109, 0%, 12%))",
-    backgroundSize: "400% 100%",
-    animation: "loading 8s ease-in-out infinite",
-});`;
-
 const cssStyling = `
 .exampleClass {
 	width: 120px;
@@ -74,4 +59,4 @@ const scssStyling = `
 }
 `;
 
-export { stitchesStyling, cssStyling, scssStyling, Component };
+export { cssStyling, scssStyling, Component };

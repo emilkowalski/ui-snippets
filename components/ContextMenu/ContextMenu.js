@@ -4,7 +4,7 @@ import * as RadixContextMenu from '@radix-ui/react-context-menu';
 
 const timeout = 3000;
 
-const ContextMenu = ({ children, stitchesStyling, cssStyling, scssStyling }) => {
+const ContextMenu = ({ children, locssStyling, scssStyling }) => {
   const copyToClipboard = async (styling) => {
     try {
       await navigator.clipboard.writeText(styling);
@@ -26,7 +26,6 @@ const ContextMenu = ({ children, stitchesStyling, cssStyling, scssStyling }) => 
       <Content>
         <Item onSelect={() => copyToClipboard(cssStyling)}>CSS</Item>
         <Item onSelect={() => copyToClipboard(scssStyling)}>SCSS</Item>
-        <Item onSelect={() => copyToClipboard(stitchesStyling)}>Stitches</Item>
       </Content>
     </RadixContextMenu.Root>
   );

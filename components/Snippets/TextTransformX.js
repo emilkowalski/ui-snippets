@@ -23,21 +23,6 @@ const Wrapper = styled('a', {
   }
 });
 
-const stitchesStyling = `
-const exampleWrapper = styled("a", {
-	color: '$white',
-
-	span: {
-	  display: 'inline-block',
-	  transition: 'transform 0.2s ease, color 0.2s ease'
-	},
-
-	'&:hover span': {
-	  transform: 'translateX(4px)',
-	  color: 'hsl(244, 63%, 69%)'
-	}
-});`;
-
 const cssStyling = `
 .exampleClass {
 	color: white;
@@ -70,4 +55,4 @@ const scssStyling = `
 }
 `;
 
-export { stitchesStyling, cssStyling, scssStyling, Component };
+export { cssStyling, scssStyling, Component };

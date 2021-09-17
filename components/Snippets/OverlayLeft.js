@@ -46,45 +46,6 @@ const Wrapper = styled('a', {
   }
 });
 
-const stitchesStyling = `
-const exampleWrapper = styled("a", {
-    padding: "12px 24px",
-    backgroundColor: "white",
-    borderRadius: "6px",
-    position: "relative",
-    overflow: "hidden",
-    cursor: "pointer",
-
-    span: {
-        color: "black",
-        position: "relative",
-        transition: "color 0.6s cubic-bezier(0.53, 0.21, 0, 1)",
-    },
-
-    "&:before": {
-        content: "",
-        position: "absolute",
-        top: "50%",
-        left: 0,
-        borderRadius: "6px",
-        transform: "translate(-100%, -50%)",
-        width: "100%",
-        height: "100%",
-        backgroundColor: "hsl(244, 63%, 69%)",
-        transition: "transform 0.6s cubic-bezier(0.53, 0.21, 0, 1)",
-    },
-
-    "&:hover": {
-        "&:before": {
-            transform: "translate(0, -50%) scale(1.001)",
-        },
-
-        span: {
-            color: "white",
-        },
-    },
-});`;
-
 const cssStyling = `
 .exampleClass {
     padding: 12px 24px;
@@ -163,4 +124,4 @@ const scssStyling = `
 }
 `;
 
-export { stitchesStyling, cssStyling, scssStyling, Component };
+export { cssStyling, scssStyling, Component };

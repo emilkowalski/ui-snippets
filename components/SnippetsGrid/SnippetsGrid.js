@@ -7,12 +7,8 @@ import SnippetsGridItem from './SnippetsGridItem';
 const SnippetsGrid = ({ children }) => {
   return (
     <Wrapper>
-      {snippets.map(({ Component, cssStyling, scssStyling, stitchesStyling }) => (
-        <ContextMenu
-          cssStyling={cssStyling}
-          scssStyling={scssStyling}
-          stitchesStyling={stitchesStyling}
-          key={stitchesStyling}>
+      {snippets.map(({ Component, cssStyling, scssStyling }) => (
+        <ContextMenu cssStyling={cssStyling} scssStyling={scssStyling} key={cssStyling}>
           <SnippetsGridItem>
             <Component />
           </SnippetsGridItem>

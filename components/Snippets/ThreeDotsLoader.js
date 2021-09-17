@@ -42,39 +42,6 @@ const Wrapper = styled('div', {
   }
 });
 
-const stitchesStyling = `
-const flashing = keyframes({
-  '0%': {
-    opacity: 0.2
-  },
-  '20%': {
-    opacity: 1
-  },
-  '100%': {
-    opacity: 0.2
-  }
-});
-
-const exampleWrapper = styled('div', {
-  span: {
-    width: '8px',
-    height: '8px',
-    borderRadius: '50%',
-    backgroundColor: 'white',
-    animation: 'flashing 1.4s infinite linear',
-    margin: '0 4px',
-    display: 'inline-block'
-  },
-
-  '&:nth-child(2)': {
-    'animation-delay': '.2s'
-  },
-
-  '&:nth-child(3)': {
-    'animation-delay': '.4s'
-  }
-});`;
-
 const cssStyling = `
 .exampleClass span {
   width: 8px;
@@ -141,4 +108,4 @@ const scssStyling = `
   }
 `;
 
-export { stitchesStyling, cssStyling, scssStyling, Component };
+export { cssStyling, scssStyling, Component };

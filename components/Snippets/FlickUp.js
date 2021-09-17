@@ -3,22 +3,22 @@ import { styled } from 'stitches.config.js';
 const Component = () => {
   return (
     <Wrapper>
-      <span>Hover over me</span>
+      <span className="main-text">Hover over me</span>
+      <span className="hover-text">Hover over me</span>
     </Wrapper>
   );
 };
 
 const Wrapper = styled('a', {
-  padding: '12px 24px',
-  backgroundColor: '$white',
-  color: '$black',
-  position: 'relative',
-  borderRadius: '$1',
-  overflow: 'hidden',
+  color: '$white',
   cursor: 'pointer',
+  overflow: 'hidden',
+  diplay: 'block',
 
-  span: {
-    position: 'relative'
+  '.main-text': {
+    diplay: 'block',
+    transform: translateY(0),
+    transition: 'transform 500ms'
   },
 
   '&:before': {

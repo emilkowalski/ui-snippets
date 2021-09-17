@@ -28,30 +28,6 @@ const Wrapper = styled('a', {
   }
 });
 
-const stitchesStyling = `
-const exampleWrapper = styled("a", {
-    display: "inline-block",
-    position: "relative",
-
-    "&:after": {
-        content: "",
-        position: "absolute",
-        width: "100%",
-        transform: "scaleX(0)",
-        height: 1,
-        top: "110%",
-        left: 0,
-        backgroundColor: "white",
-        transformOrigin: "bottom right",
-        transition: "transform .4s cubic-bezier(.86,0,.07,1)",
-    },
-
-    "&:hover::after": {
-        transform: "scaleX(1)",
-        transformOrigin: "bottom left",
-    },
-});`;
-
 const cssStyling = `
 .exampleClass {
     display: inline-block;
@@ -104,4 +80,4 @@ const scssStyling = `
   }
 `;
 
-export { stitchesStyling, cssStyling, scssStyling, Component };
+export { cssStyling, scssStyling, Component };

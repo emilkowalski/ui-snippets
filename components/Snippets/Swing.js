@@ -22,16 +22,6 @@ const Wrapper = styled('a', {
   }
 });
 
-const stitchesStyling = `
-const exampleWrapper = styled("a", {
-	color: "white",
-
-    "&:hover": {
-        animation: 'swing 1s ease',
-        "animation-iteration-count": 1,
-    },
-});`;
-
 const cssStyling = `
 .exampleClass {
 	color: white;
@@ -54,4 +44,4 @@ const scssStyling = `
  }
 `;
 
-export { stitchesStyling, cssStyling, scssStyling, Component };
+export { cssStyling, scssStyling, Component };

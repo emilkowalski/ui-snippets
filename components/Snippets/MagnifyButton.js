@@ -21,24 +21,6 @@ const Wrapper = styled('a', {
   }
 });
 
-const stitchesStyling = `
-const exampleWrapper = styled("a", {
-    padding: "12px 24px",
-    backgroundColor: "white",
-    color: "black",
-    borderRadius: "7px",
-    transition: "transform 250ms cubic-bezier(.2,.8,.4,1)",
-
-    "&:hover": {
-        transform: "scale(1.10)",
-    },
-
-    "&:active": {
-        transform: "scale(0.9)",
-    },
-});
-`;
-
 const cssStyling = `
 .exampleClass {
 	padding: 12px 24px;
@@ -75,4 +57,4 @@ const scssStyling = `
   }
 `;
 
-export { stitchesStyling, cssStyling, scssStyling, Component };
+export { cssStyling, scssStyling, Component };
