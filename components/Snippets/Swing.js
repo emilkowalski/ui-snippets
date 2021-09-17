@@ -14,7 +14,7 @@ const swing = keyframes({
 
 const Wrapper = styled('a', {
   color: '$white',
-  cursor: 'default',
+  cursor: 'pointer',
 
   '&:hover': {
     animation: `${swing} 1s ease`,

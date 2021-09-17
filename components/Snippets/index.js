@@ -29,7 +29,7 @@ const allSnippets = [
   CircleScaleButton,
   ThreeDotsLoader,
   ScalePseudo,
-  UnderlineLeftRight
+  UnderlineRight
 ];
 
 export default allSnippets;

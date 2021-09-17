@@ -1,15 +1,23 @@
 import { styled } from 'stitches.config.js';
 
 const Component = () => {
-  return <Wrapper>Hover me</Wrapper>;
+  return (
+    <Wrapper>
+      <span>Hover me</span>
+    </Wrapper>
+  );
 };
 
 const Wrapper = styled('a', {
   color: '$white',
-  transition: 'transform 0.2s ease, color 0.2s ease',
   cursor: 'pointer',
 
-  '&:hover': {
+  span: {
+    display: 'inline-block',
+    transition: 'transform 0.2s ease, color 0.2s ease'
+  },
+
+  '&:hover span': {
     transform: 'translateX(4px)',
     color: 'hsl(244, 63%, 69%)'
   }
@@ -17,23 +25,30 @@ const Wrapper = styled('a', {
 
 const stitchesStyling = `
 const exampleWrapper = styled("a", {
-	color: "white",
-    transition: "transform 0.2s ease, color 0.2s ease",
-    cursor: "pointer",
+	color: '$white',
 
-    "&:hover": {
-        transform: "translateX(4px)",
-        color: "hsl(244, 63%, 69%)",
-    },
+	span: {
+	  display: 'inline-block',
+	  transition: 'transform 0.2s ease, color 0.2s ease'
+	},
+
+	'&:hover span': {
+	  transform: 'translateX(4px)',
+	  color: 'hsl(244, 63%, 69%)'
+	}
 });`;
 
 const cssStyling = `
 .exampleClass {
 	color: white;
-    transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.exampleClass:hover {
+span {
+	display: inline-block;
+	transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.exampleClass:hover span {
 	transform: translateX(4px);
 	color: hsl(243, 80%, 62%);
 }
@@ -42,7 +57,11 @@ const cssStyling = `
 const scssStyling = `
 .exampleClass {
 	color: white;
-    transition: transform 0.2s ease, color 0.2s ease;
+
+	span {
+		display: inline-block;
+		transition: transform 0.2s ease, color 0.2s ease;
+	}
 
 	&:hover {
 		transform: translateX(4px);
