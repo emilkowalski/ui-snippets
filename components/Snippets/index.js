@@ -13,6 +13,7 @@ import * as CircleScaleButton from './CircleScaleButton';
 import * as ThreeDotsLoader from './ThreeDotsLoader';
 import * as ScalePseudo from './ScalePseudo';
 import * as UnderlineRight from './UnderlineRight';
+import * as FlickUp from './FlickUp';
 
 const allSnippets = [
   UnderlineLeftRight,
@@ -29,7 +30,8 @@ const allSnippets = [
   CircleScaleButton,
   ThreeDotsLoader,
   ScalePseudo,
-  UnderlineRight
+  UnderlineRight,
+  FlickUp
 ];
 
 export default allSnippets;
