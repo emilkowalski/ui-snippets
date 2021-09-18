@@ -10,7 +10,11 @@ const Footer = () => {
       <Stack>
         <Separator />
         <Paragraph>
-          Built by <LinkPreview url="https://twitter.com/emilkowalski_">Emil</LinkPreview> 🌕
+          Built by{' '}
+          <Link href="https://twitter.com/emilkowalski_" target="_blank" rel="noreferrer">
+            Emil
+          </Link>{' '}
+          🌕
         </Paragraph>
       </Stack>
     </footer>

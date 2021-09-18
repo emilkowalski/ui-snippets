@@ -14,6 +14,7 @@ import * as ThreeDotsLoader from './ThreeDotsLoader';
 import * as ScalePseudo from './ScalePseudo';
 import * as UnderlineRight from './UnderlineRight';
 import * as FlickUp from './FlickUp';
+import * as DonutSpinner from './DonutSpinner';
 
 const allSnippets = [
   UnderlineLeftRight,
@@ -21,12 +22,13 @@ const allSnippets = [
   PressDownButton,
   BorderMarker,
   OverlayLeft,
+  DonutSpinner,
   MagnifyButton,
   Swing,
-  Skeleton,
-  HorizontalOverlay,
   BorderFade,
+  HorizontalOverlay,
   TextTransformX,
+  Skeleton,
   CircleScaleButton,
   ThreeDotsLoader,
   ScalePseudo,
