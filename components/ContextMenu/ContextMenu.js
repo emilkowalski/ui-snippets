@@ -33,9 +33,14 @@ const ContextMenu = ({ children, cssStyling, scssStyling }) => {
 
 export default ContextMenu;
 
-const reveal = keyframes({
+const scaleIn = keyframes({
   '0%': { transform: 'scale(0.9)', opacity: 0 },
   '100%': { transform: 'scale(1)', opacity: 1 }
+});
+
+const scaleOut = keyframes({
+  '0%': { transform: 'scale(1)', opacity: 1 },
+  '100%': { transform: 'scale(0.9)', opacity: 0 }
 });
 
 const Content = styled(RadixContextMenu.Content, {
@@ -45,34 +50,29 @@ const Content = styled(RadixContextMenu.Content, {
   padding: 5,
   boxShadow: '0px 5px 15px -5px hsla(206,22%,7%,.15)',
   transformOrigin: 'var(--radix-context-menu-content-transform-origin)',
-  animation: `${reveal} 0.1s ease`
-});
 
-const Separator = styled(RadixContextMenu.Separator, {
-  height: 1,
-  background: 'hsl(208, 18%, 92%)',
-  margin: 4
-});
+  '&[data-state="open"]': {
+    animation: `${scaleIn} 0.15s ease`
+  },
 
-const Wrapper = styled(RadixContextMenu.Root, {
-  minWidth: 160,
-  background: '$white',
-  borderRadius: '$1',
-  padding: 4
+  '&[data-state="closed"]': {
+    animation: `${scaleOut} 0.1s ease`
+  },
 });
 
 const Item = styled(RadixContextMenu.Item, {
   fontSize: 13,
-  padding: '5px 10px',
-  borderRadius: '$1',
+  borderRadius: '4px',
   cursor: 'default',
   height: 28,
   padding: '4px 8px',
+  display: "flex",
+  alignItems: 'center',
   color: '$gray',
 
   '&:focus': {
     outline: 'none',
-    backgroundColor: 'hsl(207, 11%, 96%)',
+    backgroundColor: 'hsl(207, 11%, 91%)',
     color: '$darkGray'
   }
 });

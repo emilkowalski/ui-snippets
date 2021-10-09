@@ -15,6 +15,7 @@ import * as ScalePseudo from './ScalePseudo';
 import * as UnderlineRight from './UnderlineRight';
 import * as FlickUp from './FlickUp';
 import * as DonutSpinner from './DonutSpinner';
+import * as GradientBtn from './GradientBtn';
 
 const allSnippets = [
   UnderlineLeftRight,
@@ -33,7 +34,8 @@ const allSnippets = [
   ThreeDotsLoader,
   ScalePseudo,
   UnderlineRight,
-  FlickUp
+  FlickUp,
+  GradientBtn
 ];
 
 export default allSnippets;
