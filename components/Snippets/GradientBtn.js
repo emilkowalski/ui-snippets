@@ -90,7 +90,7 @@ const cssStyling = `
 	width: 100%;
 	height: 100%;
 	transition: opacity 1.5s ease;
-	background: 'linear-gradient(91.83deg, rgb(208, 60, 74) 2.26%, rgb(172, 74, 218) 95.81%)';
+	background: linear-gradient(91.83deg, rgb(208, 60, 74) 2.26%, rgb(172, 74, 218) 95.81%);
 	animation: 10s ease-in-out 0s infinite normal both running pulse;
 	opacity: 0.75;
 }
@@ -126,7 +126,7 @@ const scssStyling = `
 		width: 100%;
 		height: 100%;
 		transition: opacity 1.5s ease;
-		background: 'linear-gradient(91.83deg, rgb(208, 60, 74) 2.26%, rgb(172, 74, 218) 95.81%)';
+		background: linear-gradient(91.83deg, rgb(208, 60, 74) 2.26%, rgb(172, 74, 218) 95.81%);
 		animation: 10s ease-in-out 0s infinite normal both running pulse;
 		opacity: 0.75;
 	}
