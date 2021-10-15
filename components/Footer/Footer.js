@@ -13,8 +13,7 @@ const Footer = () => {
           Built by{' '}
           <Link href="https://twitter.com/emilkowalski_" target="_blank" rel="noreferrer">
             Emil
-          </Link>{' '}
-          🌕
+          </Link>
         </Paragraph>
       </Stack>
     </footer>

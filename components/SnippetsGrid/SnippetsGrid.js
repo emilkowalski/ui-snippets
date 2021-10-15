@@ -21,14 +21,13 @@ const SnippetsGrid = ({ children }) => {
 const Wrapper = styled('div', {
   display: 'grid',
   gap: '$4',
-  padding: '$4 0',
 
   '@bp2': {
     gridTemplateColumns: '1fr 1fr'
   },
 
   '@bp3': {
-    gridTemplateColumns: '1fr 1fr 1fr 1fr'
+    gridTemplateColumns: 'repeat(4, 1fr)'
   }
 });
 

@@ -4,7 +4,7 @@ const Component = () => {
   return (
     <Wrapper>
       <Gradient />
-      <Button>Hover me</Button>
+      <Button>Hover over me</Button>
     </Wrapper>
   );
 };

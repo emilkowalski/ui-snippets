@@ -3,7 +3,7 @@ import { styled } from 'stitches.config.js';
 const Component = () => {
   return (
     <Wrapper>
-      <span>Hover me</span>
+      <span>Hover over me</span>
     </Wrapper>
   );
 };
