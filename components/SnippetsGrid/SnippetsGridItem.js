@@ -10,7 +10,8 @@ const Wrapper = styled('div', {
   borderRadius: '$1',
   display: 'flex',
   justifyContent: 'center',
-  alignItems: 'center'
+  alignItems: 'center',
+  userSelect: 'none'
 });
 
 export default SnippetsGridItem;
