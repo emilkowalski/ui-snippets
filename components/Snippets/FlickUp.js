@@ -13,7 +13,7 @@ const Wrapper = styled('a', {
   color: '$white',
   cursor: 'pointer',
   overflow: 'hidden',
-  diplay: 'block',
+  display: 'block',
   position: 'relative',
 
   '.main-text': {
@@ -22,7 +22,7 @@ const Wrapper = styled('a', {
   },
 
   '.hover-text': {
-    diplay: 'block',
+    display: 'block',
     transform: 'translateY(100%)',
     transition: 'transform 500ms',
     position: 'absolute',
@@ -50,7 +50,7 @@ const cssStyling = `
 	color: 'white';
 	cursor: 'pointer';
 	overflow: 'hidden';
-	diplay: 'block';
+	display: 'block';
 	position: 'relative';
 }
 
@@ -86,7 +86,7 @@ const scssStyling = `
 	color: 'white';
 	cursor: 'pointer';
 	overflow: 'hidden';
-	diplay: 'block';
+	display: 'block';
 	position: 'relative';
 
 	.main-text {
