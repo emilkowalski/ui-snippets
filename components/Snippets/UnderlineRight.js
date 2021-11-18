@@ -32,7 +32,7 @@ const cssStyling = `
 .exampleClass {
 	display: inline-block;
 	position: relative;
-	cursor: pointer';
+	cursor: pointer;
 }
 
   .exampleClass::after {
