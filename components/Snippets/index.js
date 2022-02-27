@@ -16,6 +16,7 @@ import * as UnderlineRight from './UnderlineRight';
 import * as FlickUp from './FlickUp';
 import * as DonutSpinner from './DonutSpinner';
 import * as GradientBtn from './GradientBtn';
+import * as CoverOverText from "./CoverOverText";
 
 const allSnippets = [
   UnderlineLeftRight,
@@ -35,7 +36,9 @@ const allSnippets = [
   ScalePseudo,
   UnderlineRight,
   FlickUp,
-  GradientBtn
+  GradientBtn,
+  CoverOverText,
+  
 ];
 
 export default allSnippets;
