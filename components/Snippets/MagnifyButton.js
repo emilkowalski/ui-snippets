@@ -24,9 +24,9 @@ const Wrapper = styled('a', {
 const cssStyling = `
 .exampleClass {
 	padding: 12px 24px;
-    backgroundColor: white;
+    background-color: white;
     color: black;
-    borderRadius: 7px;
+    border-radius: 7px;
     transition: transform 250ms cubic-bezier(.2,.8,.4,1);
   }
 
