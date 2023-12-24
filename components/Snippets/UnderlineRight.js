@@ -43,8 +43,8 @@ const cssStyling = `
 	height: 1;
 	top: 110%;
 	left: 0;
-	backgroundColor: white;
-	transformOrigin: bottom right;
+	background-color: white;
+	transform-origin: bottom right;
 	transition: transform .4s cubic-bezier(.86,0,.07,1);
   }
 
