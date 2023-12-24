@@ -62,7 +62,7 @@ const cssStyling = `
 .exampleClass span {
 	position: relative;
 	transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
-},
+}
 
 .exampleClass:before {
 	content: "";
@@ -76,16 +76,16 @@ const cssStyling = `
 	transform: scaleX(0);
 	transform-origin: 100% 100%;
 	transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
-},
+}
 
 .exampleClass:hover::before {
 	transform-origin: 0 0;
 	transform: scaleX(1);
-},
+}
 
 .exampleClass:hover span {
 	color: white;
-},
+}
 `;
 
 const scssStyling = `
